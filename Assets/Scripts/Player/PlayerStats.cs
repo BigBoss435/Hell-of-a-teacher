@@ -9,7 +9,7 @@ public class PlayerStats : MonoBehaviour
     public CharacterScriptableObject characterData;
 
     //Current Stats
-    [HideInInspector]
+    //[HideInInspector]
     public float currentHealth;
     [HideInInspector]
     public float currentRecovery;
@@ -53,7 +53,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
-        experienceCap = levelRanges[0].experienceCapIncrease;
+        //experienceCap = levelRanges[0].experienceCapIncrease;
     }
 
     private void Update()

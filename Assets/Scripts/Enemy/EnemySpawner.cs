@@ -11,7 +11,7 @@ public class EnemySpawner : MonoBehaviour
         public List<EnemyGroup> enemyGroups;
         public int waveQuota;
         public float spawnInterval;
-        public float spawnCount;
+        public int spawnCount;
     }
 
     [System.Serializable]
@@ -36,6 +36,7 @@ public class EnemySpawner : MonoBehaviour
     [Header("Spawn Positions")]
     public List<Transform> relativeSpawnPoints;
 
+
     Transform player;
 
     void Start()
@@ -44,6 +45,7 @@ public class EnemySpawner : MonoBehaviour
         CalculateWaveQuota();
     }
 
+    // Update is called once per frame
     void Update()
     {
         if (currentWaveCount < waves.Count && waves[currentWaveCount].spawnCount == 0)
@@ -51,7 +53,7 @@ public class EnemySpawner : MonoBehaviour
             StartCoroutine(BeginNextWave());
         }
 
-        spawnTimer = Time.deltaTime;
+        spawnTimer += Time.deltaTime;
 
         if (spawnTimer >= waves[currentWaveCount].spawnInterval)
         {
@@ -87,23 +89,26 @@ public class EnemySpawner : MonoBehaviour
     {
         if (waves[currentWaveCount].spawnCount < waves[currentWaveCount].waveQuota && !maximumEnemiesReached)
         {
-            foreach(var enemyGroup in waves[currentWaveCount].enemyGroups)
+            foreach (var enemyGroup in waves[currentWaveCount].enemyGroups)
             {
-                if (enemiesAlive >= maxEnemiesAllowed)
+                if (enemyGroup.spawnCount < enemyGroup.enemyCount)
                 {
-                    maximumEnemiesReached = true;
-                    return;
+                    if (enemiesAlive >= maxEnemiesAllowed)
+                    {
+                        maximumEnemiesReached = true;
+                        return;
+                    }
+
+                    Instantiate(enemyGroup.enemyPrefab, player.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity);
+
+                    enemyGroup.spawnCount++;
+                    waves[currentWaveCount].spawnCount++;
+                    enemiesAlive++;
                 }
-
-                Instantiate(enemyGroup.enemyPrefab, player.position + relativeSpawnPoints[Random.Range(0, relativeSpawnPoints.Count)].position, Quaternion.identity);
-
-                enemyGroup.spawnCount++;
-                waves[currentWaveCount].spawnCount++;
-                enemiesAlive++;
             }
         }
 
-        if(enemiesAlive < maxEnemiesAllowed)
+        if (enemiesAlive < maxEnemiesAllowed)
         {
             maximumEnemiesReached = false;
         }

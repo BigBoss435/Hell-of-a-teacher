@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyStats : MonoBehaviour
@@ -17,7 +18,7 @@ public class EnemyStats : MonoBehaviour
     public float despawnDistance = 20f;
     Transform player;
 
-    private void wake()
+    private void Awake()
     {
         currentMoveSpeed = enemyData.MoveSpeed;
         currentHealth = enemyData.MaxHealth;
@@ -31,7 +32,7 @@ public class EnemyStats : MonoBehaviour
 
     void Update()
     {
-        if (Vector2.Distance(transform.position, player.position) >= despawnDistance) 
+        if (Vector2.Distance(transform.position, player.position) >= despawnDistance)
         {
             ReturnEnemy();
         }
