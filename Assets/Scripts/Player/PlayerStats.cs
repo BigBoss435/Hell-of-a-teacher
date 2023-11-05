@@ -53,7 +53,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
-        //experienceCap = levelRanges[0].experienceCapIncrease;
+        experienceCap = levelRanges[0].experienceCapIncrease;
     }
 
     private void Update()
@@ -72,6 +72,7 @@ public class PlayerStats : MonoBehaviour
     public void IncreaseExperience(int amount)
     {
         experience += amount;
+        Debug.Log("Leveled up");
         LevelUpChecker();
     }
 

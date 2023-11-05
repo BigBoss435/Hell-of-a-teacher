@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5716377725799030833}
   - component: {fileID: 1949845010996805456}
   - component: {fileID: -8067160423273125918}
+  - component: {fileID: -4628527831890676757}
   m_Layer: 7
   m_Name: Druid
   m_TagString: Enemy
@@ -173,7 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36bb602c7f41c3749ab194835fb64d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushBackForce: 100
 --- !u!114 &1949845010996805456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +212,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-4628527831890676757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683226769124728415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074694df408dc7c4f88db38f11992e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

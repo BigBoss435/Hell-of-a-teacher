@@ -19,4 +19,4 @@ MonoBehaviour:
   might: 5
   projectileSpeed: 5
   projectileNumber: 0
-  magnet: 5
+  magnet: 1.6
