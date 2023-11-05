@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 3430259207529317588}
   - component: {fileID: 7141881844304060648}
   - component: {fileID: 5745004229785996591}
-  - component: {fileID: 1614858993302555383}
+  - component: {fileID: -10463508938102553}
   - component: {fileID: 5716377725799030833}
   - component: {fileID: 1949845010996805456}
   - component: {fileID: -8067160423273125918}
   m_Layer: 7
-  m_Name: Circle
+  m_Name: Druid
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.017908812, y: -0.0004775524}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -132,9 +132,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.742105, y: 0.84784937}
   m_EdgeRadius: 0
---- !u!50 &1614858993302555383
+--- !u!50 &-10463508938102553
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -157,10 +157,10 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!114 &5716377725799030833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36bb602c7f41c3749ab194835fb64d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pushBackForce: 100
 --- !u!114 &1949845010996805456
 MonoBehaviour:
   m_ObjectHideFlags: 0
