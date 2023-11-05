@@ -960,6 +960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terrainChunks:
   - {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
+  - {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
   player: {fileID: 1485636483}
   checkerRadius: 0.2
   noTerrainPosition: {x: 0, y: 0, z: 0}
@@ -969,8 +970,8 @@ MonoBehaviour:
   currentChunk: {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
   spawnedChunks:
   - {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-  maxOpDist: 20
-  optimizerCooldownDur: 1
+  maxOpDist: 50
+  optimizerCooldownDur: 0
 --- !u!4 &1915972368
 Transform:
   m_ObjectHideFlags: 0
@@ -996,6 +997,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 260774066574945359, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
       propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 515702580441223595, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 515702580441223595, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1381192749246481459, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
@@ -1072,11 +1081,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5979079304421682512, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
       propertyPath: m_Offset.x
-      value: 0.004817486
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5979079304421682512, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
       propertyPath: m_Offset.y
-      value: 0.0000009536743
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8841721551170933336, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
       propertyPath: m_Layer

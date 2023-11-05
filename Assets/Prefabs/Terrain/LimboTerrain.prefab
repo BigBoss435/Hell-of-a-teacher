@@ -1435,6 +1435,7 @@ GameObject:
   - component: {fileID: 2250004185101586117}
   - component: {fileID: 3501153274583363438}
   - component: {fileID: 5979079304421682512}
+  - component: {fileID: 5543314496821860508}
   m_Layer: 9
   m_Name: LimboTerrain
   m_TagString: Untagged
@@ -1511,7 +1512,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003660202, y: -0.0043468475}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1524,6 +1525,33 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 14, y: 8}
   m_EdgeRadius: 0
+--- !u!50 &5543314496821860508
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3361734003000260846}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &3582759708502599388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,9 +1685,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8288945066632426385}
-  - component: {fileID: 5324222603075574793}
   - component: {fileID: 1381192749246481459}
   - component: {fileID: 515702580441223595}
+  - component: {fileID: 5178762556218262122}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -1682,19 +1710,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2250004185101586117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5324222603075574793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8841721551170933336}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f3503202d53f3f4d96f7daa37ec3d5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetMap: {fileID: 3361734003000260846}
 --- !u!61 &1381192749246481459
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1767,3 +1782,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5178762556218262122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8841721551170933336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f3503202d53f3f4d96f7daa37ec3d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetMap: {fileID: 3361734003000260846}
