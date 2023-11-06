@@ -10,12 +10,14 @@ public class WeaponController : MonoBehaviour
 
     protected PlayerController pm;
 
+    // Start is called before the first frame update
     protected virtual void Start()
     {
         pm = FindAnyObjectByType<PlayerController>();
         currentCooldown = weaponData.CooldownDuration;
     }
 
+    // Update is called once per frame
     protected virtual void Update()
     {
         currentCooldown -= Time.deltaTime;
