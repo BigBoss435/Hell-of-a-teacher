@@ -369,7 +369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &549808330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,10 +385,18 @@ MonoBehaviour:
   waves:
   - waveName: 1
     enemyGroups:
-    - enemyName: Circle
+    - enemyName: Druid
       enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 683226769124728415, guid: af58fb98b76cf824b91cc605c0989f4f, type: 3}
+    - enemyName: Bush
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 7029901560226710811, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
+    - enemyName: Eye
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
