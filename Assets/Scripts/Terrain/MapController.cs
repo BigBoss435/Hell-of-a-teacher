@@ -20,8 +20,6 @@ public class MapController : MonoBehaviour
     float optimizerCooldown;
     public float optimizerCooldownDur;
 
-
-
     void Start()
     {
         pm = FindObjectOfType<PlayerController>();
