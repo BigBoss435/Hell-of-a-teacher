@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1264752ee7b28041b172e1b3a27561e
+guid: f5c5dcaf376339c4da5991c92cb76863
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 60
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Druid_0
+      name: CrazyBush_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 45
-        height: 50
+        width: 48
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a670541dad3926c4eb43622e419d56d6
-      internalID: -34868038
+      spriteID: d9373141eb543904b9c1cf64100f8c16
+      internalID: -1443225855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Druid_1
+      name: CrazyBush_1
       rect:
         serializedVersion: 2
-        x: 45
+        x: 48
         y: 0
-        width: 45
-        height: 50
+        width: 48
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41861efe5841866449cb6ddbad5c07b6
-      internalID: 2042130847
+      spriteID: 06c4f83d60dd57747bca088715143630
+      internalID: -1716129132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Druid_2
+      name: CrazyBush_2
       rect:
         serializedVersion: 2
-        x: 90
+        x: 96
         y: 0
-        width: 45
-        height: 50
+        width: 48
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2495d194a72120b45b0dab7914bae96f
-      internalID: 72205776
+      spriteID: 0d2db9a7addb3d940b14be06bf0c2a85
+      internalID: -687446479
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Druid_3
+      name: CrazyBush_3
       rect:
         serializedVersion: 2
-        x: 135
+        x: 144
         y: 0
-        width: 45
-        height: 50
+        width: 48
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d87b1f357e9af843a596427af47d001
-      internalID: 1725295117
+      spriteID: 1b2587f42c2b09a41920194d0c67b67d
+      internalID: -231157254
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Druid_4
+      name: CrazyBush_4
       rect:
         serializedVersion: 2
-        x: 180
+        x: 192
         y: 0
-        width: 45
-        height: 50
+        width: 48
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bcdce0dc438254498873126f0e287ad
-      internalID: -350916443
+      spriteID: cf9881667d648414da3b12b88c3d6d01
+      internalID: 445103618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Druid_5
+      name: CrazyBush_5
       rect:
         serializedVersion: 2
-        x: 225
+        x: 240
         y: 0
-        width: 45
-        height: 50
+        width: 48
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +242,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 422229558f88f5640ad3a87130a0396b
-      internalID: -93274129
+      spriteID: 66ca2459b43f3e24b9ddf99c13779109
+      internalID: 334471875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrazyBush_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ceadd903e874c46bf49254abdd769a
+      internalID: -1767829545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CrazyBush_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 48
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e990cb90f7dad04d99f0874f1911512
+      internalID: -1187830369
       vertices: []
       indices: 
       edges: []
@@ -259,12 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Druid_0: -34868038
-      Druid_1: 2042130847
-      Druid_2: 72205776
-      Druid_3: 1725295117
-      Druid_4: -350916443
-      Druid_5: -93274129
+      CrazyBush_0: -1443225855
+      CrazyBush_1: -1716129132
+      CrazyBush_2: -687446479
+      CrazyBush_3: -231157254
+      CrazyBush_4: 445103618
+      CrazyBush_5: 334471875
+      CrazyBush_6: -1767829545
+      CrazyBush_7: -1187830369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
