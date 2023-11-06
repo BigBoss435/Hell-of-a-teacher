@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +8,7 @@ public class PlayerStats : MonoBehaviour
     public CharacterScriptableObject characterData;
 
     //Current Stats
-    //[HideInInspector]
+    [HideInInspector]
     public float currentHealth;
     [HideInInspector]
     public float currentRecovery;
@@ -24,11 +23,12 @@ public class PlayerStats : MonoBehaviour
     [HideInInspector]
     public float currentMagnet;
 
-    //Experience and level of the player
-    [Header("Experience/Level")]
+    //Experience and level  of the player
+    [Header ("Experience/Level")]
     public int experience = 0;
     public int level = 1;
     public int experienceCap;
+
 
     [System.Serializable]
     public class LevelRange
@@ -38,7 +38,7 @@ public class PlayerStats : MonoBehaviour
         public int experienceCapIncrease;
     }
 
-    //Invincibility frames
+    //I-frames
     [Header("I-frames")]
     public float invincibilityDuration;
     float invincibilityTimer;
@@ -46,19 +46,21 @@ public class PlayerStats : MonoBehaviour
 
     public List<LevelRange> levelRanges;
 
-    //To be implemented
-    //InventoryManager inventory;
+    InventoryManager inventory;
     public int weaponIndex;
     public int passiveItemIndex;
+
+    public GameObject secondWeaponTest;
+    public GameObject firstPassiveItemTest, secondPassiveItemTest;
 
     private void Start()
     {
         experienceCap = levelRanges[0].experienceCapIncrease;
     }
 
-    private void Update()
+    void Update()
     {
-        if (invincibilityTimer > 0) 
+        if(invincibilityTimer > 0)
         {
             invincibilityTimer -= Time.deltaTime;
         }
@@ -69,10 +71,9 @@ public class PlayerStats : MonoBehaviour
         Recover();
     }
 
-    public void IncreaseExperience(int amount)
+    public void IncreaseExperience (int amount)
     {
         experience += amount;
-        Debug.Log("Leveled up");
         LevelUpChecker();
     }
 
@@ -86,7 +87,7 @@ public class PlayerStats : MonoBehaviour
             int experienceCapIncrease = 0;
             foreach (LevelRange range in levelRanges)
             {
-                if(level >= range.startLevel && level <= range.endLevel)
+                if(level >= range.startLevel && level <= range.endLevel) 
                 {
                     experienceCapIncrease = range.experienceCapIncrease;
                     break;
@@ -96,8 +97,11 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+
     void Awake()
     {
+        inventory = GetComponent<InventoryManager>();
+        
         currentHealth = characterData.MaxHealth;
         currentRecovery = characterData.Recovery;
         currentMoveSpeed = characterData.MoveSpeed;
@@ -105,8 +109,8 @@ public class PlayerStats : MonoBehaviour
         currentProjectileSpeed= characterData.ProjectileSpeed;
         currentProjectileNumber= characterData.ProjectileNumber;
         currentMagnet = characterData.Magnet;
-
-        //SpawnWeapon(characterData.StartingWeapon);
+        
+        SpawnWeapon(characterData.StartingWeapon);
     }
 
     public void TakeDamage(float dmg)
@@ -130,14 +134,13 @@ public class PlayerStats : MonoBehaviour
         Debug.Log("Player is dead");
     }
 
-    
     public void RestoreHealth(float amount)
     {
         if(currentHealth < characterData.MaxHealth)
         {
             currentHealth += amount;
-
-            if(currentHealth > characterData.MaxHealth)
+            
+            if(currentHealth > characterData.MaxHealth) 
             {
                 currentHealth = characterData.MaxHealth;
             }
@@ -157,35 +160,36 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    /*
     public void SpawnWeapon(GameObject weapon)
     {
+        //Checking if the slots are full, and returning if it is
         if (weaponIndex >= inventory.weaponSlots.Count - 1)
         {
             Debug.LogError("Inventory slots are already full");
             return;
         }
-
+        
         GameObject spawnedWeapon = Instantiate(weapon, transform.position, Quaternion.identity);
         spawnedWeapon.transform.SetParent(transform);
         inventory.AddWeapon(weaponIndex, spawnedWeapon.GetComponent<WeaponController>());
 
         weaponIndex++;
     }
-
+    
+    /*
     public void SpawnPassiveItem(GameObject passiveItem)
     {
+        //Checking if the slots are full, and returning if it is
         if (passiveItemIndex >= inventory.passiveItemSlots.Count - 1)
         {
             Debug.LogError("Inventory slots are already full");
             return;
         }
-
+        
         GameObject spawnedPassiveItem = Instantiate(passiveItem, transform.position, Quaternion.identity);
         spawnedPassiveItem.transform.SetParent(transform);
-        inventory.AddWeapon(weaponIndex, spawnedPassiveItem.GetComponent<PassiveItem>());
+        inventory.AddPassiveItem(passiveItemIndex, spawnedPassiveItem.GetComponent<PassiveItem>());
 
-        weaponIndex++;
-    }
-    */
+        passiveItemIndex++;
+    }*/
 }
