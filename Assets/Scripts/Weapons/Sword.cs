@@ -14,6 +14,6 @@ public class Sword : WeaponController
         base.Attack();
         GameObject spawnedSword = Instantiate(weaponData.Prefab);
         spawnedSword.transform.position = transform.position;
-        spawnedSword.GetComponent<SwordBehavior>().DirectionChecker(pm.moveDir);
+        spawnedSword.GetComponent<SwordBehavior>().DirectionChecker(pm.lastMovedVector);
     }
 }

@@ -42,38 +42,52 @@ public class ProjectileWeapon : MonoBehaviour
 
         Vector3 scale  = transform.localScale;
         Vector3 rotation = transform.rotation.eulerAngles;
+        Vector3 position = transform.position;
 
         if (dirx < 0 && diry == 0) //left
         {
             rotation.z = 90f;
+            position.x = transform.position.x -0.5f;
         }
         else if (dirx == 0 &&  diry < 0) //down
         {
             rotation.z = 180f;
+            position.y = transform.position.y - 0.5f;
         }
         else if (dirx == 0 && diry > 0) //up
         {
             rotation.z = 0f;
-            
+            position.y = transform.position.y + 0.5f;
+
         }
         else if (dir.x > 0 && dir.y > 0) //right up
         {
             rotation.z = -45f;
+            position.x = transform.position.x + 0.5f;
+            position.y = transform.position.y + 0.5f;
         }
         else if (dir.x > 0 && dir.y < 0) //right down
         {
             rotation.z = -145f;
+            position.x = transform.position.x + 0.5f;
+            position.y = transform.position.y - 0.5f;
         }
         else if (dir.x < 0 && dir.y > 0) //left up
         {
             rotation.z = 45f;
+            position.x = transform.position.x - 0.5f;
+            position.y = transform.position.y + 0.5f;
         }
         else if (dir.x < 0 && dir.y < 0) //left down
         {
             rotation.z = 145f;
+            position.x = transform.position.x - 0.5f;
+            position.y = transform.position.y - 0.5f;
         }
+        
         transform.localScale = scale;
         transform.rotation = Quaternion.Euler(rotation);
+        transform.position = position;
     }
 
     protected virtual void OnTriggerEnter2D(Collider2D col)

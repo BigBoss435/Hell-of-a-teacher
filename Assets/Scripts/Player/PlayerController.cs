@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public float lastHorizontalVector;
     [HideInInspector]
     public float lastVerticalVector;
+    [HideInInspector]
+    public Vector2 lastMovedVector;
 
     Rigidbody2D rb;
     float inputHorizontal;
@@ -22,6 +24,7 @@ public class PlayerController : MonoBehaviour
         player = GetComponent<PlayerStats>();
         rb = GetComponent<Rigidbody2D>();
         am = GetComponent<Animator>();
+        lastMovedVector = new Vector2(1, 0f);
     }
 
     void Update()
@@ -55,16 +58,22 @@ public class PlayerController : MonoBehaviour
         if (moveDir.x != 0)
         {
             lastHorizontalVector = moveDir.x;
+            lastMovedVector = new Vector2(lastHorizontalVector, 0f);
         }
 
         if (moveDir.y != 0)
         {
             lastVerticalVector = moveDir.y;
+            lastMovedVector = new Vector2(0f, lastVerticalVector);
+        }
+
+        if (moveDir.x != 0 && moveDir.y != 0)
+        {
+            lastMovedVector = new Vector2(lastHorizontalVector, lastVerticalVector);
         }
         if (moveX != 0 || moveY != 0)
         {
             am.SetBool("Move", true);
-
         }
         else
         {
