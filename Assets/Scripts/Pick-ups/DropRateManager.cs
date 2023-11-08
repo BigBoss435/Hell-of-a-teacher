@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DropRateManager : MonoBehaviour
 {
+    [System.Serializable]
     public class Drops
     {
         public string name;

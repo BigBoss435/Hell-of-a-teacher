@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3124134387938892586}
   - component: {fileID: 8079326868016417313}
   - component: {fileID: 1279949087769311410}
-  - component: {fileID: -2002993503644988227}
+  - component: {fileID: -7353501109811613472}
   m_Layer: 7
   m_Name: CrazyBush_0
   m_TagString: Enemy
@@ -212,7 +212,7 @@ MonoBehaviour:
   currentHealth: 0
   currentDamage: 0
   despawnDistance: 20
---- !u!114 &-2002993503644988227
+--- !u!114 &-7353501109811613472
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,3 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074694df408dc7c4f88db38f11992e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drops:
+  - name: XpGem
+    itemPrefab: {fileID: 1801770931798691589, guid: 4285f2f55ac74e049a5a7d46bfdc28f6, type: 3}
+    dropRate: 75
