@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     bool facingRight = true;
     PlayerStats player;
     Animator am;
+    private AudioSource _audioSource;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         am = GetComponent<Animator>();
         lastMovedVector = new Vector2(1, 0f);
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -74,16 +76,22 @@ public class PlayerController : MonoBehaviour
         if (moveX != 0 || moveY != 0)
         {
             am.SetBool("Move", true);
+            if (!_audioSource.isPlaying)
+            { 
+            _audioSource.Play();
+            }
         }
         else
         {
             am.SetBool("Move", false);
+            _audioSource.Stop();
         }
     }
 
     void Move()
     {
         rb.velocity = new Vector2(moveDir.x * player.currentMoveSpeed, moveDir.y * player.currentMoveSpeed);
+        
     }
 
     void Flip()
