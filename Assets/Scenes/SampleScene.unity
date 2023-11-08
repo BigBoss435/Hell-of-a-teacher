@@ -1358,14 +1358,14 @@ MonoBehaviour:
   - {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
   - {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
   player: {fileID: 1485636483}
-  checkerRadius: 1
+  checkerRadius: 0.4
   terrainMask:
     serializedVersion: 2
     m_Bits: 512
   currentChunk: {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
   spawnedChunks:
   - {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-  maxOpDist: 70
+  maxOpDist: 50
   optimizerCooldownDur: 0
 --- !u!4 &1915972368
 Transform:
