@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -21,16 +22,24 @@ public class GameManager : MonoBehaviour
 
     public GameState previousState;
 
-    [Header("UI")] 
+    [Header("Screens")] 
     public GameObject pauseScreen;
+    public GameObject resultsScreen;
     
-    //Current stats
+    [Header("Current Stat Displays")]     
     public TextMeshProUGUI currentHealthDisplay;
     public TextMeshProUGUI currentRecoveryDisplay;
     public TextMeshProUGUI currentMoveSpeedDisplay;
     public TextMeshProUGUI currentMightDisplay;
     public TextMeshProUGUI currentProjectileSpeedDisplay;
     public TextMeshProUGUI currentMagnetDisplay;
+
+    [Header("Results Screen Displays")] 
+    public Image chosenCharacterImage;
+    public TextMeshProUGUI chosenCharacterName;
+    public TextMeshProUGUI levelReachedDisplay;
+
+    public bool isGameOver = false;
 
     void Awake()
     {
@@ -57,6 +66,13 @@ public class GameManager : MonoBehaviour
                 CheckForPauseAndResume();
                 break;
             case GameState.GameOver:
+                if (!isGameOver)
+                {
+                    isGameOver = true;
+                    Time.timeScale = 0f;
+                    Debug.Log("Game over yeah");
+                    DisplayResults();
+                }
                 break;
             default:
                 Debug.LogWarning("State does not exist");
@@ -110,5 +126,27 @@ public class GameManager : MonoBehaviour
     void DisableScreens()
     {
         pauseScreen.SetActive(false);
+        resultsScreen.SetActive(false);
+    }
+
+    public void GameOver()
+    {
+        ChangeState(GameState.GameOver);
+    }
+
+    void DisplayResults()
+    {
+        resultsScreen.SetActive(true);
+    }
+
+    public void AssignChosenCharacterUI(CharacterScriptableObject chosenCharacterData)
+    {
+        chosenCharacterImage.sprite = chosenCharacterData.Icon;
+        chosenCharacterName.text = chosenCharacterData.Name;
+    }
+
+    public void AssignLevelReachedUI(int levelReachedData)
+    {
+        levelReachedDisplay.text = levelReachedData.ToString();
     }
 }

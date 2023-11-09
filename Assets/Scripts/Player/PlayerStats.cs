@@ -208,7 +208,9 @@ public class PlayerStats : MonoBehaviour
         CurrentProjectileSpeed= characterData.ProjectileSpeed;
         CurrentMagnet = characterData.Magnet;
         
-        SpawnWeapon(characterData.StartingWeapon);
+        //SpawnWeapon(characterData.StartingWeapon);
+        
+        GameManager.instance.AssignChosenCharacterUI(characterData);
     }
 
     public void TakeDamage(float dmg)
@@ -229,7 +231,11 @@ public class PlayerStats : MonoBehaviour
 
     public void Kill()
     {
-        Debug.Log("Player is dead");
+        if (!GameManager.instance.isGameOver)
+        {
+            GameManager.instance.AssignLevelReachedUI(level);
+            GameManager.instance.GameOver();
+        }
     }
 
     public void RestoreHealth(float amount)
