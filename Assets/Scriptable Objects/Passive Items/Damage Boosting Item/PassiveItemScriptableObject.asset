@@ -9,14 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
-  m_Name: Ball Weapon
+  m_Script: {fileID: 11500000, guid: 50f8559f93919411c932357b8b1cd12a, type: 3}
+  m_Name: PassiveItemScriptableObject
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5566822604008826795, guid: d0493ac553be94a509772994a0a3c5da, type: 3}
-  damage: 5
-  speed: 5
-  cooldownDuration: 1
-  pierce: 5
+  multiplier: 100
   level: 1
   nextLevelPrefab: {fileID: 0}
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 0}

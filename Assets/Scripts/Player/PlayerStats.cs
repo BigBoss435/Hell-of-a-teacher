@@ -193,6 +193,8 @@ public class PlayerStats : MonoBehaviour
                 }
             }
             experienceCap += experienceCapIncrease;
+            
+            GameManager.instance.StartLevelUp();
         }
     }
 
@@ -208,7 +210,7 @@ public class PlayerStats : MonoBehaviour
         CurrentProjectileSpeed= characterData.ProjectileSpeed;
         CurrentMagnet = characterData.Magnet;
         
-        //SpawnWeapon(characterData.StartingWeapon);
+        SpawnWeapon(characterData.StartingWeapon);
         
         GameManager.instance.AssignChosenCharacterUI(characterData);
     }
@@ -234,6 +236,7 @@ public class PlayerStats : MonoBehaviour
         if (!GameManager.instance.isGameOver)
         {
             GameManager.instance.AssignLevelReachedUI(level);
+            GameManager.instance.AssignChosenWeaponsAndPassiveItemsUI(inventory.weaponUISlots, inventory.passiveItemUISlots);
             GameManager.instance.GameOver();
         }
     }
@@ -280,7 +283,7 @@ public class PlayerStats : MonoBehaviour
         weaponIndex++;
     }
     
-    /*
+    
     public void SpawnPassiveItem(GameObject passiveItem)
     {
         //Checking if the slots are full, and returning if it is
@@ -295,5 +298,5 @@ public class PlayerStats : MonoBehaviour
         inventory.AddPassiveItem(passiveItemIndex, spawnedPassiveItem.GetComponent<PassiveItem>());
 
         passiveItemIndex++;
-    }*/
+    }
 }
