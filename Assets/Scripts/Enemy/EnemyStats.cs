@@ -17,6 +17,8 @@ public class EnemyStats : MonoBehaviour
     public float currentHealth;
     [HideInInspector]
     public float currentDamage;
+    public AudioClip damageClip;
+    private AudioSource damageSound;
 
     public float despawnDistance = 20f;
     Transform player;
@@ -44,6 +46,8 @@ public class EnemyStats : MonoBehaviour
         originalColor = sr.color;
 
         movement = GetComponent<EnemyMovement>();
+        damageSound = GetComponent<AudioSource>();
+        damageSound.clip = damageClip;
     }
 
     void Update()
@@ -105,6 +109,10 @@ public class EnemyStats : MonoBehaviour
         {
             PlayerStats player = col.gameObject.GetComponent<PlayerStats>();
             player.TakeDamage(currentDamage);
+            if (!damageSound.isPlaying)
+            {
+                damageSound.Play();
+            }
         }
     }
 
