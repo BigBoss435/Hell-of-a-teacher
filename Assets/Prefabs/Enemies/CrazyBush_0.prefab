@@ -212,6 +212,10 @@ MonoBehaviour:
   currentHealth: 0
   currentDamage: 0
   despawnDistance: 20
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.2
+  damageFadeTime: 0.6
+  deathFadeTime: 0.6
 --- !u!114 &-7353501109811613472
 MonoBehaviour:
   m_ObjectHideFlags: 0

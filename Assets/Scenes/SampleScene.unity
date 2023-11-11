@@ -7874,6 +7874,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 167a92c58d2afd9449e81aa978124543, type: 2}
+  damageEffect: {fileID: 4101402737234861809, guid: c3d5b1b4a57394c759daed1b0cfff086, type: 3}
   experience: 0
   level: 1
   experienceCap: 0
