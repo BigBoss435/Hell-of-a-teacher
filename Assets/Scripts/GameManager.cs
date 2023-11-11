@@ -52,6 +52,8 @@ public class GameManager : MonoBehaviour
     public bool isGameOver = false;
     public bool choosingUpgrade = false;
 
+    public GameObject playerObject;
+
     void Awake()
     {
         if (instance == null)
@@ -216,7 +218,7 @@ public class GameManager : MonoBehaviour
 
         if (stopwatchTime >= timeLimit)
         {
-            GameOver();
+            playerObject.SendMessage("Kill");
         }
     }
 
@@ -231,6 +233,7 @@ public class GameManager : MonoBehaviour
     public void StartLevelUp()
     {
         ChangeState(GameState.LevelUp);
+        playerObject.SendMessage("RemoveAndApplyUpgrades");
     }
 
     public void EndLevelUp()

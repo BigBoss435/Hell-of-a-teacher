@@ -18,5 +18,7 @@ MonoBehaviour:
   cooldownDuration: 1
   pierce: 5
   level: 1
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 8792032455652870013, guid: 1d1883332538741eaaaa5afb14d57cf2, type: 3}
+  name: Ball
+  description: Shoots balls where the teacher faces
   icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
-  m_Name: Aura Controller
+  m_Name: Aura Controller Level 3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7906426677086378690, guid: 3730a4483a7e14fff901b7148fd8057a, type: 3}
-  damage: 5
+  prefab: {fileID: 9027429894353620703, guid: c7bb04362eae541d38d4dc0dbebb8b65, type: 3}
+  damage: 15
   speed: 1
   cooldownDuration: 1
   pierce: 1
   level: 1
-  nextLevelPrefab: {fileID: 9027429894353620703, guid: 91fba6e7d39684179a9b9d0476949f97, type: 3}
-  name: Math teacher's Aura
-  description: Kills enemies that come too close
+  nextLevelPrefab: {fileID: 0}
+  name: Math teacher's Aura Level 3
+  description: Increased damage by 5
   icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}

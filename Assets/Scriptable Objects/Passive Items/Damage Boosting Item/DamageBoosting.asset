@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50f8559f93919411c932357b8b1cd12a, type: 3}
-  m_Name: PassiveItemScriptableObject
+  m_Name: DamageBoosting
   m_EditorClassIdentifier: 
-  multiplier: 100
+  multiplier: 110
   level: 1
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 7235079407376830332, guid: abde4b98af27d4316a6021252e8e72da, type: 3}
+  name: Damage Booster
+  description: Increases damage by 10%
   icon: {fileID: 0}
