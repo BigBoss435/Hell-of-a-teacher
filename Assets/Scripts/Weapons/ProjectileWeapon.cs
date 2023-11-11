@@ -25,7 +25,7 @@ public class ProjectileWeapon : MonoBehaviour
     
     public float GetCurrentDamage()
     {
-        return currentDamage *= FindObjectOfType<PlayerStats>().currentMight;
+        return currentDamage *= FindObjectOfType<PlayerStats>().CurrentMight;
     }
     
     protected virtual void Start()
@@ -95,7 +95,7 @@ public class ProjectileWeapon : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(GetCurrentDamage());
+            enemy.TakeDamage(GetCurrentDamage(), transform.position);
             ReducePierce();
         }
         else if (col.CompareTag("Props"))

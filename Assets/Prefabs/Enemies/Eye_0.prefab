@@ -291,6 +291,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074694df408dc7c4f88db38f11992e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  drops:
+  - name: XpGem
+    itemPrefab: {fileID: 1801770931798691589, guid: 4285f2f55ac74e049a5a7d46bfdc28f6, type: 3}
+    dropRate: 75
 --- !u!114 &4885952719369725255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -309,6 +313,10 @@ MonoBehaviour:
   currentDamage: 0
   damageClip: {fileID: 8300000, guid: 79f4464e95a5270449b49109b29490e2, type: 3}
   despawnDistance: 20
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  damageFlashDuration: 0.2
+  damageFadeTime: 0.6
+  deathFadeTime: 0.6
 --- !u!82 &-5284090352149682097
 AudioSource:
   m_ObjectHideFlags: 0

@@ -9,6 +9,9 @@ public class EnemyMovement : MonoBehaviour
     Transform player;
     Rigidbody2D rb;
 
+    Vector2 knockbackVelocity;
+    float knockbackDuration;
+
     void Start()
     {
         enemy = GetComponent<EnemyStats>();
@@ -24,7 +27,26 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        Vector2 direction = (player.position - transform.position).normalized;
-        rb.velocity = direction * enemy.currentMoveSpeed;
+        if (knockbackDuration > 0)
+        {
+            transform.position += (Vector3)knockbackVelocity * Time.deltaTime;
+            knockbackDuration -= Time.deltaTime;
+        }
+        else
+        {
+            Vector2 direction = (player.position - transform.position).normalized;
+            rb.velocity = direction * enemy.currentMoveSpeed;
+        }
+    }
+
+    public void Knockback(Vector2 velocity, float duration)
+    {
+        if (knockbackDuration > 0)
+        {
+            return;
+        }
+
+        knockbackVelocity = velocity;
+        knockbackDuration = duration;
     }
 }
