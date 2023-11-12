@@ -8009,6 +8009,7 @@ MonoBehaviour:
   level: 1
   experienceCap: 0
   invincibilityDuration: 1
+  damageSound: 0
   levelRanges:
   - startLevel: 1
     endLevel: 3

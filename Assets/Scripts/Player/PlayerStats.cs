@@ -140,6 +140,7 @@ public class PlayerStats : MonoBehaviour
     public float invincibilityDuration;
     float invincibilityTimer;
     bool isInvincible;
+    public bool damageSound = false;
 
     public List<LevelRange> levelRanges;
 
@@ -247,6 +248,7 @@ public class PlayerStats : MonoBehaviour
         if (!isInvincible)
         {
             CurrentHealth -= dmg;
+            damageSound = true;
 
             if (damageEffect) Instantiate(damageEffect, transform.position, Quaternion.identity);
 
@@ -259,6 +261,10 @@ public class PlayerStats : MonoBehaviour
             }
             
             UpdateHealthBar();
+        }
+        else
+        {
+            damageSound = false;
         }
     }
 
