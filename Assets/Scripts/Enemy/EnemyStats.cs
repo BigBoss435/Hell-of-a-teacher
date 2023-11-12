@@ -114,7 +114,7 @@ public class EnemyStats : MonoBehaviour
         {
             PlayerStats player = col.gameObject.GetComponent<PlayerStats>();
             player.TakeDamage(currentDamage);
-            if (!damageSound.isPlaying)
+            if (player.damageSound == true)
             {
                 damageSound.Play();
             }
