@@ -4941,6 +4941,7 @@ GameObject:
   - component: {fileID: 954838880}
   - component: {fileID: 954838879}
   - component: {fileID: 954838878}
+  - component: {fileID: 954838881}
   m_Layer: 6
   m_Name: Health Bar Canvas
   m_TagString: Untagged
@@ -4961,7 +4962,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1964382144}
-  m_Father: {fileID: 1485636489}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5031,6 +5032,19 @@ Canvas:
   m_SortingLayerID: -1212734201
   m_SortingOrder: 20
   m_TargetDisplay: 0
+--- !u!114 &954838881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954838876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e71d797db2541164da3f1c51694eba32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1485636489}
 --- !u!1 &981744627
 GameObject:
   m_ObjectHideFlags: 0
@@ -7941,7 +7955,6 @@ Transform:
   m_Children:
   - {fileID: 618923601}
   - {fileID: 474550045}
-  - {fileID: 954838877}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1485636490
@@ -8893,7 +8906,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -31.048859, y: 0, z: -18.899353, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9492,8 +9505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.099999994}
-  m_SizeDelta: {x: 1, y: 0.19999999}
+  m_AnchoredPosition: {x: 0, y: -0.95}
+  m_SizeDelta: {x: 1, y: 0.0812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1964382145
 MonoBehaviour:
@@ -10671,6 +10684,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 1485636489}
+  - {fileID: 954838877}
   - {fileID: 450317826}
   - {fileID: 549808331}
   - {fileID: 1036457454}

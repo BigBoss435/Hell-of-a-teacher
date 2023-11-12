@@ -115,10 +115,11 @@ public class PlayerStats : MonoBehaviour
             }
         }
     }
-    
+
     #endregion
 
     public ParticleSystem damageEffect;
+    
 
     //Experience and level  of the player
     [Header ("Experience/Level")]
