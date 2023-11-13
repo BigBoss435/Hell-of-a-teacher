@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Quaternion = UnityEngine.Quaternion;
@@ -33,6 +34,8 @@ public class MapController : MonoBehaviour
         ChunkChecker();
         ChunkOptimzer();
     }
+    
+    HashSet<Vector3> spawnedChunkPositions = new HashSet<Vector3>();
 
     void ChunkChecker()
     {
@@ -51,26 +54,42 @@ public class MapController : MonoBehaviour
         if (directionName.Contains("Up"))
         {
             CheckAndSpawnChunk("Up");
+            CheckAndSpawnChunk("Right Up");
+            CheckAndSpawnChunk("Left Up");
         }
         if (directionName.Contains("Down"))
         {
             CheckAndSpawnChunk("Down");
+            CheckAndSpawnChunk("Right Down");
+            CheckAndSpawnChunk("Left Down");
         }
         if (directionName.Contains("Right"))
         {
             CheckAndSpawnChunk("Right");
+            CheckAndSpawnChunk("Right Up");
+            CheckAndSpawnChunk("Right Down");
         }
         if (directionName.Contains("Left"))
         {
             CheckAndSpawnChunk("Left");
+            CheckAndSpawnChunk("Left Up");
+            CheckAndSpawnChunk("Left Down");
         }
     }
 
     void CheckAndSpawnChunk(string direction)
     {
-        if (!Physics2D.OverlapCircle(currentChunk.transform.Find(direction).position, checkerRadius, terrainMask))
+        Transform spawnTransform = currentChunk.transform.Find(direction);
+
+        if (spawnTransform != null)
         {
-            SpawnChunk(currentChunk.transform.Find(direction).position);
+            Vector3 spawnPosition = spawnTransform.position;
+
+            if (!spawnedChunkPositions.Contains(spawnPosition) && !Physics2D.OverlapCircle(spawnPosition, checkerRadius, terrainMask))
+            {
+                SpawnChunk(spawnPosition);
+                spawnedChunkPositions.Add(spawnPosition);
+            }
         }
     }
 

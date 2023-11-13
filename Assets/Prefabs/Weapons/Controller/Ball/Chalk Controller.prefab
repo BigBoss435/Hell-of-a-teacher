@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3442266373489265394}
   - component: {fileID: 4101652487620118971}
   m_Layer: 6
-  m_Name: Ball controller
+  m_Name: Chalk Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

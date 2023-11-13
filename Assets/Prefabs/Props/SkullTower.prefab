@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 1166575012277773307}
   - component: {fileID: 7244206948474451055}
   - component: {fileID: -5349305414905643802}
+  - component: {fileID: -6865385534211962211}
+  - component: {fileID: 3934304203257328828}
   m_Layer: 9
   m_Name: SkullTower
-  m_TagString: Untagged
+  m_TagString: Props
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -118,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.027331233, y: -0.4407217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.0001, y: 0.0001}
+  m_Size: {x: 0.63609827, y: 0.5451145}
   m_EdgeRadius: 0
 --- !u!50 &-5349305414905643802
 Rigidbody2D:
@@ -143,7 +145,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 3
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -158,3 +160,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!114 &-6865385534211962211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3218640254343717812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5264e7bee6b96e4fa3a0a752a2701f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+--- !u!114 &3934304203257328828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3218640254343717812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 074694df408dc7c4f88db38f11992e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drops:
+  - name: Health
+    itemPrefab: {fileID: 6214582256130948289, guid: 4f152ba48eeaf468ca869ef1af2b82ef, type: 3}
+    dropRate: 25

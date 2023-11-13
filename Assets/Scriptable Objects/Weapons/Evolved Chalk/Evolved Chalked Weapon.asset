@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
-  m_Name: Ball Weapon Level 2
+  m_Name: Evolved Chalked Weapon
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5566822604008826795, guid: d0493ac553be94a509772994a0a3c5da, type: 3}
-  damage: 10
-  speed: 5
-  cooldownDuration: 1
-  pierce: 5
-  level: 1
+  prefab: {fileID: 5566822604008826795, guid: 842b0e4ca0c1d47759d574d6c50eca9e, type: 3}
+  damage: 20
+  speed: 10
+  cooldownDuration: 2
+  pierce: 2
+  level: 0
   nextLevelPrefab: {fileID: 0}
-  name: Ball Level 2
-  description: Increased damage by 5
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  name: Chalk Evolution
+  description: Increased damage and speed
+  icon: {fileID: 21300000, guid: ef479837c9162014c9e425b0dfd92f85, type: 3}
+  evolvedUpgradeToRemove: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2635058273231297827}
   - component: {fileID: 7060493809261470255}
   m_Layer: 8
-  m_Name: Ballgrapghics
+  m_Name: Evolved Chalked Weapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ef479837c9162014c9e425b0dfd92f85, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5283019, g: 0.5258099, b: 0.5258099, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
