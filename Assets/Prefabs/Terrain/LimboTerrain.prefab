@@ -1601,7 +1601,7 @@ MonoBehaviour:
   - {fileID: 3326287809555785276}
   - {fileID: 5954309733303353417}
   propPrefabs:
-  - {fileID: 6214582256130948289, guid: 4f152ba48eeaf468ca869ef1af2b82ef, type: 3}
+  - {fileID: 3218640254343717812, guid: f3f221fc3ac452d4588f9c61627f47c9, type: 3}
 --- !u!1 &3582759708502599388
 GameObject:
   m_ObjectHideFlags: 0
