@@ -107,7 +107,7 @@ public class ProjectileWeapon : MonoBehaviour
             }
         }
     }
-
+    
     void ReducePierce()
     {
         currentPierce--;

@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1949845010996805456}
   - component: {fileID: -8067160423273125918}
   - component: {fileID: 3534053406024122688}
-  - component: {fileID: -4628527831890676757}
   - component: {fileID: -3330404202492334063}
   m_Layer: 7
   m_Name: Druid
@@ -149,7 +148,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0

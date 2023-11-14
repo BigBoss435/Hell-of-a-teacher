@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 8079326868016417313}
   - component: {fileID: 1279949087769311410}
   - component: {fileID: -7353501109811613472}
-  - component: {fileID: -2002993503644988227}
   - component: {fileID: -8352213190816094769}
   m_Layer: 7
   m_Name: CrazyBush_0
@@ -170,7 +169,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 1
