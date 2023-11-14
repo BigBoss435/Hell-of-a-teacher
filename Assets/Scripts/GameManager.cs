@@ -54,6 +54,10 @@ public class GameManager : MonoBehaviour
     public float timeLimit;
     float stopwatchTime;
     public TextMeshProUGUI stopwatchDisplay;
+
+    [Header("Kill Count")] 
+    public int killCount;
+    public TextMeshProUGUI killCountDisplay;
     
     public bool isGameOver = false;
     public bool choosingUpgrade = false;
@@ -81,6 +85,7 @@ public class GameManager : MonoBehaviour
             case GameState.Gameplay:
                 CheckForPauseAndResume();
                 UpdateStopwatch();
+                UpdateKillCount();
                 break;
             case GameState.Paused:
                 CheckForPauseAndResume();
@@ -274,6 +279,16 @@ public class GameManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(stopwatchTime % 60);
 
         stopwatchDisplay.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+
+    void UpdateKillCount()
+    {
+        killCountDisplay.text = killCount.ToString();
+    }
+    
+    public void IncreaseKillCount()
+    {
+        killCount++;
     }
 
     public void StartLevelUp()
