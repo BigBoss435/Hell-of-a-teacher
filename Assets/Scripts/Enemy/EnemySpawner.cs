@@ -117,6 +117,8 @@ public class EnemySpawner : MonoBehaviour
     {
         enemiesAlive--;
         GameManager.instance.IncreaseKillCount();
+        PlayerStats player = FindObjectOfType<PlayerStats>();
+        player.IncreaseRage(10);
         
         if (enemiesAlive < maxEnemiesAllowed)
         {

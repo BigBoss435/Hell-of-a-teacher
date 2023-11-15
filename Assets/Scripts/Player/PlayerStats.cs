@@ -9,6 +9,7 @@ public class PlayerStats : MonoBehaviour
 {
     [SerializeField]
     public CharacterScriptableObject characterData;
+    public RageMeter rageMeter;
 
     //Current Stats
     float currentHealth;
@@ -152,6 +153,7 @@ public class PlayerStats : MonoBehaviour
     [Header("UI")] 
     public Image healthBar;
     public Image expBar;
+    public Image rageBar;
     public TextMeshProUGUI levelText;
 
     public GameObject secondWeaponTest;
@@ -160,6 +162,7 @@ public class PlayerStats : MonoBehaviour
     private void Start()
     {
         experienceCap = levelRanges[0].experienceCapIncrease;
+        rageMeter = GetComponent<RageMeter>();
         
         GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth;
         GameManager.instance.currentRecoveryDisplay.text = "Recovery: " + currentRecovery;
@@ -168,6 +171,7 @@ public class PlayerStats : MonoBehaviour
         GameManager.instance.currentProjectileSpeedDisplay.text = "Projectile Speed: " + currentProjectileSpeed;
         GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet;
         
+        UpdateRageBar();
         UpdateHealthBar();
         UpdateExpBar();
         UpdateLevelText();
@@ -191,6 +195,13 @@ public class PlayerStats : MonoBehaviour
         experience += amount;
         LevelUpChecker();
         UpdateExpBar();
+    }
+    
+    public void IncreaseRage(int amount)
+    {
+        rageMeter.AddRage(amount);
+        Debug.Log(rageMeter.currentRage);
+        UpdateRageBar();
     }
 
     void LevelUpChecker()
@@ -225,6 +236,11 @@ public class PlayerStats : MonoBehaviour
     void UpdateLevelText()
     {
         levelText.text = "LV " + level.ToString();
+    }
+
+    void UpdateRageBar()
+    {
+        rageBar.fillAmount = (float)rageMeter.currentRage / rageMeter.rageCap;
     }
 
 
