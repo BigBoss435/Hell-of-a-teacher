@@ -8372,7 +8372,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 167a92c58d2afd9449e81aa978124543, type: 2}
-  rageMeter: {fileID: 0}
   damageEffect: {fileID: 4101402737234861809, guid: c3d5b1b4a57394c759daed1b0cfff086, type: 3}
   experience: 0
   level: 1
@@ -8607,6 +8606,9 @@ MonoBehaviour:
   - weaponUpgradeIndex: 1
     initialWeapon: {fileID: 9027429894353620703, guid: 0add73f2cf55b428cbc5dfdef6fe7238, type: 3}
     weaponData: {fileID: 11400000, guid: 935862ce396c84d8f9050502120b82e4, type: 2}
+  - weaponUpgradeIndex: 2
+    initialWeapon: {fileID: 3730900938454673155, guid: 3a235e036ffe64f7f86f9be7c136d8b1, type: 3}
+    weaponData: {fileID: 11400000, guid: f512808ccfe6d4bcc97902c620f6bb9d, type: 2}
   passiveItemUpgradeOptions:
   - passiveItemUpgradeIndex: 0
     initialPassiveItem: {fileID: 7235079407376830332, guid: 20fa354bcbfe64a72abc62762b4d9a67, type: 3}
