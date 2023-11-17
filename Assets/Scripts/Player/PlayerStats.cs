@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using Unity.UI;
 using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField]
     public CharacterScriptableObject characterData;
-    public RageMeter rageMeter;
+    RageMeter rageMeter;
 
     //Current Stats
     float currentHealth;
@@ -158,6 +157,9 @@ public class PlayerStats : MonoBehaviour
 
     public GameObject secondWeaponTest;
     public GameObject firstPassiveItemTest, secondPassiveItemTest;
+    
+    [Header("Rage Bar stat increases")]
+    bool recoveryChanged = false;
 
     private void Start()
     {
@@ -188,6 +190,7 @@ public class PlayerStats : MonoBehaviour
             isInvincible = false;
         }
         Recover();
+        UpdateStatsBasedOnRage();
     }
 
     public void IncreaseExperience (int amount)
@@ -243,6 +246,14 @@ public class PlayerStats : MonoBehaviour
         rageBar.fillAmount = (float)rageMeter.currentRage / rageMeter.rageCap;
     }
 
+    public void UpdateStatsBasedOnRage()
+    {
+        if (rageMeter.currentRage >= 25 && !recoveryChanged)
+        {
+            CurrentRecovery += 0.1f;
+            recoveryChanged = true;
+        }
+    }
 
     void Awake()
     {
