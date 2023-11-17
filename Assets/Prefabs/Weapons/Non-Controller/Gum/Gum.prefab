@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2109097266489393571}
   - component: {fileID: 5015529893561353113}
   - component: {fileID: 6324734227129315079}
+  - component: {fileID: -7091906981345329290}
   m_Layer: 0
   m_Name: Gum
   m_TagString: Untagged
@@ -164,3 +165,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-7091906981345329290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6753783031799295469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35600fe605f604d7590b014799f549ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
