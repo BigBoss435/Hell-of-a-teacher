@@ -14,6 +14,6 @@ public class Gum : WeaponController
         base.Attack();
         GameObject spawnedGum = Instantiate(weaponData.Prefab);
         spawnedGum.transform.position = transform.position;
-        spawnedGum.GetComponent<BouncingBehavior>().DirectionChecker(pm.lastMovedVector);
+        spawnedGum.GetComponent<SwordBehavior>().DirectionChecker(pm.lastMovedVector);
     }
 }

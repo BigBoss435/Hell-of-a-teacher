@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2863183471621315267}
   - component: {fileID: 1691362692531462191}
-  - component: {fileID: 2109097266489393571}
   - component: {fileID: 5015529893561353113}
   - component: {fileID: 6324734227129315079}
-  - component: {fileID: -7091906981345329290}
-  m_Layer: 0
+  - component: {fileID: 6408057219065634534}
+  m_Layer: 8
   m_Name: Gum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,21 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2109097266489393571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6753783031799295469}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52643358d1cad4d3fa18ec527a675609, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponData: {fileID: 11400000, guid: f512808ccfe6d4bcc97902c620f6bb9d, type: 2}
-  destroyAferSeconds: 4
-  gumParticle: {fileID: 913022805162174104, guid: 19f0b1fae21c445fb937bed1fed09237, type: 3}
 --- !u!58 &5015529893561353113
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -154,7 +138,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 04bdb1484ff0642bd8a1bf2d6392ab75, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -165,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-7091906981345329290
+--- !u!114 &6408057219065634534
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,6 +158,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6753783031799295469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35600fe605f604d7590b014799f549ce, type: 3}
+  m_Script: {fileID: 11500000, guid: ae278890263384484a555ecbcbb680d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponData: {fileID: 11400000, guid: f512808ccfe6d4bcc97902c620f6bb9d, type: 2}
+  destroyAferSeconds: 3
+  rb: {fileID: 0}
+  LastVelocity: {x: 0, y: 0, z: 0}
+  swordParticle: {fileID: 913022805162174104, guid: 19f0b1fae21c445fb937bed1fed09237, type: 3}
