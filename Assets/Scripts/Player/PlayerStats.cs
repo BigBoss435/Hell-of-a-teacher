@@ -268,7 +268,7 @@ public class PlayerStats : MonoBehaviour
         
         SpawnWeapon(characterData.StartingWeapon);
         
-        GameManager.instance.AssignChosenCharacterUI(characterData);
+        //GameManager.instance.AssignChosenCharacterUI(characterData);
     }
 
     public void TakeDamage(float dmg)
