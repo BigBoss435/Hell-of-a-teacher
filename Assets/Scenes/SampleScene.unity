@@ -315,8 +315,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3149,12 +3149,16 @@ MonoBehaviour:
       enemyCount: 5
       spawnCount: 0
       enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
+    - enemyName: Worm
+      enemyCount: 5
+      spawnCount: 0
+      enemyPrefab: {fileID: 2043734416035313269, guid: c8fbc4299037c0b439776c7fac5f54ba, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 10
+  maxEnemiesAllowed: 30
   maximumEnemiesReached: 0
   waveInterval: 3
   relativeSpawnPoints:
@@ -4693,8 +4697,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upgrade Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5162,8 +5166,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upgrade Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5371,8 +5375,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upgrade Description
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5655,8 +5659,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Book Count
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6395,8 +6399,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upgrade Description
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6904,8 +6908,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: LV 2
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7247,8 +7251,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upgrade Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7873,8 +7877,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Kill Count
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8082,8 +8086,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upgrade Description
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8769,8 +8773,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upgrade Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9848,8 +9852,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upgrade Description
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -10439,8 +10443,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Level Up!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
-  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
