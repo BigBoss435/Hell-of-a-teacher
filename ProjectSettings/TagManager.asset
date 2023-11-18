@@ -7,7 +7,6 @@ TagManager:
   - Props
   - Weapon
   - Enemy
-  - Bounds
   layers:
   - Default
   - TransparentFX
@@ -20,7 +19,7 @@ TagManager:
   - Weapon
   - Terrain
   - Props
-  - Bounds
+  - 
   - 
   - 
   - 

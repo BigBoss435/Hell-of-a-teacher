@@ -316,7 +316,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.35555556}
+    oldSize: {x: 0.6, y: 0.42666668}
     newSize: {x: 0.9, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -380,9 +380,6 @@ MonoBehaviour:
   - name: XpGem
     itemPrefab: {fileID: 1801770931798691589, guid: 4285f2f55ac74e049a5a7d46bfdc28f6, type: 3}
     dropRate: 75
-  - name: Book
-    itemPrefab: {fileID: 718983985276072283, guid: ef2056795d36a4db887eefed7f670661, type: 3}
-    dropRate: 20
 --- !u!114 &4885952719369725255
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -235,9 +235,6 @@ MonoBehaviour:
   - name: XpGem
     itemPrefab: {fileID: 1801770931798691589, guid: 4285f2f55ac74e049a5a7d46bfdc28f6, type: 3}
     dropRate: 75
-  - name: Book
-    itemPrefab: {fileID: 718983985276072283, guid: ef2056795d36a4db887eefed7f670661, type: 3}
-    dropRate: 20
 --- !u!82 &-3330404202492334063
 AudioSource:
   m_ObjectHideFlags: 0

@@ -1,7 +1,5 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Cinemachine;
 using UnityEngine;
 
 public class ProjectileWeapon : MonoBehaviour
@@ -17,9 +15,6 @@ public class ProjectileWeapon : MonoBehaviour
     protected float currentCooldownDuration;
     protected int currentPierce;
 
-    public Rigidbody2D rb;
-    public Vector3 LastVelocity;
-    
     void Awake()
     {
         currentDamage = weaponData.Damage;
@@ -37,7 +32,7 @@ public class ProjectileWeapon : MonoBehaviour
     {
         Destroy(gameObject, destroyAferSeconds);
     }
-    
+
     public void DirectionChecker(Vector3 dir)
     {
         direction = dir;
@@ -94,7 +89,7 @@ public class ProjectileWeapon : MonoBehaviour
         transform.rotation = Quaternion.Euler(rotation);
         transform.position = position;
     }
-    
+
     protected virtual void OnTriggerEnter2D(Collider2D col)
     {
         if (col.CompareTag("Enemy"))
@@ -111,31 +106,6 @@ public class ProjectileWeapon : MonoBehaviour
                 ReducePierce();
             }
         }
-        else if (col.CompareTag("Bounds"))
-        {
-            ReducePierce();
-            
-            Vector2 normal = GetCollisionNormal(col, transform.position);
-            direction = Vector2.Reflect(direction, normal);
-        }
-    }
-    
-    private Vector2 GetCollisionNormal(Collider2D collider, Vector2 collisionPoint)
-    {
-        // Assuming your collider is an EdgeCollider2D
-        EdgeCollider2D edgeCollider = collider as EdgeCollider2D;
-
-        if (edgeCollider != null)
-        {
-            // Get the closest point on the collider to the collision point
-            Vector2 closestPoint = edgeCollider.ClosestPoint(collisionPoint);
-
-            // Calculate the normal vector from the collision point to the closest point
-            return (collisionPoint - closestPoint).normalized;
-        }
-
-        // Default to reflecting vertically if the collider type is not recognized
-        return new Vector2(0, -1);
     }
     
     void ReducePierce()

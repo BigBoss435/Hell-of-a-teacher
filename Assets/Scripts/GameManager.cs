@@ -47,8 +47,6 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI chosenCharacterName;
     public TextMeshProUGUI levelReachedDisplay;
     public TextMeshProUGUI timeSurvivedDisplay;
-    public TextMeshProUGUI enemiesKilledDisplay;
-    public TextMeshProUGUI booksCollectedDisplay;
     public List<Image> chosenWeaponsUI = new List<Image>(6);
     public List<Image> chosenPassiveItemsUI = new List<Image>(6);
 
@@ -98,7 +96,6 @@ public class GameManager : MonoBehaviour
                     isGameOver = true;
                     Time.timeScale = 0f;
                     Debug.Log("Game over yeah");
-                    AssignKillCountUI(killCount);
                     DisplayResults();
                 }
                 break;
@@ -227,16 +224,6 @@ public class GameManager : MonoBehaviour
     public void AssignLevelReachedUI(int levelReachedData)
     {
         levelReachedDisplay.text = levelReachedData.ToString();
-    }
-    
-    public void AssignKillCountUI(int killCount)
-    {
-        enemiesKilledDisplay.text = killCount.ToString();
-    }
-    
-    public void AssignBooksCollectedUI(int booksCollected)
-    {
-        booksCollectedDisplay.text = booksCollected.ToString();
     }
 
     public void AssignChosenWeaponsAndPassiveItemsUI(List<Image> chosenWeaponsData, List<Image> chosenPassiveItemsData)
