@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public float lastVerticalVector;
     [HideInInspector]
     public Vector2 lastMovedVector;
+    [HideInInspector]
+    public bool right = true;
 
     Rigidbody2D rb;
     float inputHorizontal;
@@ -43,10 +45,12 @@ public class PlayerController : MonoBehaviour
         if (inputHorizontal > 0 && !facingRight)
         {
             Flip();
+            right = true;
         }
         if (inputHorizontal < 0 && facingRight)
         {
             Flip();
+            right = false;
         }
     }
 
