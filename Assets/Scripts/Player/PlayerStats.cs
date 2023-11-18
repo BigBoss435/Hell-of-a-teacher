@@ -126,6 +126,7 @@ public class PlayerStats : MonoBehaviour
     public int experience = 0;
     public int level = 1;
     public int experienceCap;
+    public int booksCollected = 0;
 
 
     [System.Serializable]
@@ -154,6 +155,7 @@ public class PlayerStats : MonoBehaviour
     public Image expBar;
     public Image rageBar;
     public TextMeshProUGUI levelText;
+    public TextMeshProUGUI bookText;
 
     public GameObject secondWeaponTest;
     public GameObject firstPassiveItemTest, secondPassiveItemTest;
@@ -177,6 +179,7 @@ public class PlayerStats : MonoBehaviour
         UpdateHealthBar();
         UpdateExpBar();
         UpdateLevelText();
+        UpdateBookText();
     }
 
     void Update()
@@ -205,6 +208,12 @@ public class PlayerStats : MonoBehaviour
         rageMeter.AddRage(amount);
         Debug.Log(rageMeter.currentRage);
         UpdateRageBar();
+    }
+
+    public void IncreaseBooks(int amount)
+    {
+        booksCollected += amount;
+        UpdateBookText();
     }
 
     void LevelUpChecker()
@@ -244,6 +253,11 @@ public class PlayerStats : MonoBehaviour
     void UpdateRageBar()
     {
         rageBar.fillAmount = (float)rageMeter.currentRage / rageMeter.rageCap;
+    }
+
+    void UpdateBookText()
+    {
+        bookText.text = booksCollected.ToString();
     }
 
     public void UpdateStatsBasedOnRage()
@@ -308,6 +322,7 @@ public class PlayerStats : MonoBehaviour
             GameManager.instance.AssignLevelReachedUI(level);
             GameManager.instance.AssignChosenWeaponsAndPassiveItemsUI(inventory.weaponUISlots, inventory.passiveItemUISlots);
             GameManager.instance.GameOver();
+            GameManager.instance.AssignBooksCollectedUI(booksCollected);
         }
     }
 
