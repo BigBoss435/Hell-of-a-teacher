@@ -14,6 +14,6 @@ public class Ruler : WeaponController
         base.Attack();
         GameObject spawnedRuler = Instantiate(weaponData.Prefab);
         spawnedRuler.transform.position = transform.position;
-        spawnedRuler.GetComponent<RulerBehavior>();
+        spawnedRuler.transform.parent = transform;
     }
 }

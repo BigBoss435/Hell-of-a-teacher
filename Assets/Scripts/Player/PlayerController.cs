@@ -45,12 +45,10 @@ public class PlayerController : MonoBehaviour
         if (inputHorizontal > 0 && !facingRight)
         {
             Flip();
-            right = true;
         }
         if (inputHorizontal < 0 && facingRight)
         {
             Flip();
-            right = false;
         }
     }
 

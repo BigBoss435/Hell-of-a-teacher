@@ -4,18 +4,33 @@ using UnityEngine;
 
 public class RulerBehavior : MeleeBehaviour
 {
-    Ruler ruler;
-    public ParticleSystem rulerParticle;
+    
+    List<GameObject> markedEnemies;
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
-        ruler = FindAnyObjectByType<Ruler>();
+        markedEnemies = new List<GameObject>();
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    protected override void OnTriggerEnter2D(Collider2D col)
     {
-        Destroy(gameObject);
-        Instantiate(rulerParticle, transform.position, Quaternion.identity);
+        if (col.CompareTag("Enemy") && !markedEnemies.Contains(col.gameObject))
+        {
+            EnemyStats enemy = col.GetComponent<EnemyStats>();
+            enemy.TakeDamage(GetCurrentDamage(), transform.position);
+
+            markedEnemies.Add(col.gameObject);
+        }
+        else if (col.CompareTag("Props"))
+        {
+            if (col.gameObject.TryGetComponent(out BreakableProps breakable) && !markedEnemies.Contains(col.gameObject))
+            {
+                breakable.TakeDamage(GetCurrentDamage());
+
+                markedEnemies.Add(col.gameObject);
+            }
+        }
     }
+    
 }

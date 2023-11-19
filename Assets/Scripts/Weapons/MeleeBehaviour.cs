@@ -6,6 +6,7 @@ public class MeleeBehaviour : MonoBehaviour
 {
     public WeaponScriptableObject weaponData;
 
+    protected Vector3 direction;
     public float destroyAfterSeconds;
 
     //Current stats
