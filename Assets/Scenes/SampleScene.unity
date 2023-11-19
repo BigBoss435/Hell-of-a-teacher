@@ -12323,7 +12323,7 @@ MonoBehaviour:
   expBar: {fileID: 1981384471}
   rageBar: {fileID: 1132575758}
   levelText: {fileID: 1128509499}
-  bookText: {fileID: 0}
+  bookText: {fileID: 924742841}
   secondWeaponTest: {fileID: 0}
   firstPassiveItemTest: {fileID: 0}
   secondPassiveItemTest: {fileID: 0}

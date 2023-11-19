@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
-  m_Name: Ruler
+  m_Name: Ruler Weapon
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  prefab: {fileID: 2425871356611294198, guid: 61ac853e05ee649f7be1cfc934c88812, type: 3}
   damage: 5
   speed: 0
   cooldownDuration: 1
-  pierce: 0
-  level: 0
+  pierce: 10
+  level: 1
   nextLevelPrefab: {fileID: 0}
-  name: 
-  description: 
+  name: Ruler
+  description: Attacks in front of the teacher
   icon: {fileID: 0}
   evolvedUpgradeToRemove: 0
