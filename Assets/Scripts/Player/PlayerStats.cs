@@ -281,7 +281,7 @@ public class PlayerStats : MonoBehaviour
         CurrentMagnet = characterData.Magnet;
         
         SpawnWeapon(characterData.StartingWeapon);
-        
+        SpawnPassiveItem(firstPassiveItemTest);
         //GameManager.instance.AssignChosenCharacterUI(characterData);
     }
 

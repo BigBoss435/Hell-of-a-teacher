@@ -3832,37 +3832,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687915724}
   m_CullTransparentMesh: 1
---- !u!1 &707261198
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 707261199}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &707261199
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707261198}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.46744204, y: -1.9058231, z: -0.010252476}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &715579206
 GameObject:
   m_ObjectHideFlags: 0
@@ -11672,10 +11641,22 @@ MonoBehaviour:
   - weaponUpgradeIndex: 1
     initialWeapon: {fileID: 9027429894353620703, guid: 0add73f2cf55b428cbc5dfdef6fe7238, type: 3}
     weaponData: {fileID: 11400000, guid: 935862ce396c84d8f9050502120b82e4, type: 2}
+  - weaponUpgradeIndex: 2
+    initialWeapon: {fileID: 6353409420526057539, guid: fa5bc28556498d84c92ed8360d03cff7, type: 3}
+    weaponData: {fileID: 11400000, guid: 23402dbfa3cfa9349ba248db87f7f589, type: 2}
+  - weaponUpgradeIndex: 3
+    initialWeapon: {fileID: 3185710855845669270, guid: 3172e397689e2485781e523c5b2e3213, type: 3}
+    weaponData: {fileID: 11400000, guid: 6f838b6457d8bd84ead8e312f0e00f21, type: 2}
+  - weaponUpgradeIndex: 4
+    initialWeapon: {fileID: 3730900938454673155, guid: 3a235e036ffe64f7f86f9be7c136d8b1, type: 3}
+    weaponData: {fileID: 11400000, guid: f512808ccfe6d4bcc97902c620f6bb9d, type: 2}
   passiveItemUpgradeOptions:
   - passiveItemUpgradeIndex: 0
     initialPassiveItem: {fileID: 7235079407376830332, guid: 20fa354bcbfe64a72abc62762b4d9a67, type: 3}
     passiveItemData: {fileID: 11400000, guid: ddc46a192e7c2475f9e57e7fdb097ac8, type: 2}
+  - passiveItemUpgradeIndex: 1
+    initialPassiveItem: {fileID: 4193852732043185075, guid: 2f4129ea69b15443a923bc177bd10e9e, type: 3}
+    passiveItemData: {fileID: 11400000, guid: b03a81273b60f4c779330f1a2f5b1ce7, type: 2}
   upgradeUIOptions:
   - upgradeNameDisplay: {fileID: 1415041258}
     upgradeDescriptionDisplay: {fileID: 879816088}
@@ -12356,7 +12337,7 @@ MonoBehaviour:
   levelText: {fileID: 1128509499}
   bookText: {fileID: 924742841}
   secondWeaponTest: {fileID: 0}
-  firstPassiveItemTest: {fileID: 0}
+  firstPassiveItemTest: {fileID: 4193852732043185075, guid: 2f4129ea69b15443a923bc177bd10e9e, type: 3}
   secondPassiveItemTest: {fileID: 0}
 --- !u!212 &8537646136537676421
 SpriteRenderer:
@@ -12472,4 +12453,3 @@ SceneRoots:
   - {fileID: 6418799784346140671}
   - {fileID: 715870600}
   - {fileID: 357158111}
-  - {fileID: 707261199}
