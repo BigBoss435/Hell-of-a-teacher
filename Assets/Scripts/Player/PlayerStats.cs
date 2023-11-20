@@ -17,6 +17,7 @@ public class PlayerStats : MonoBehaviour
     float currentMight;
     float currentProjectileSpeed;
     float currentMagnet;
+    float currentExperienceRatio;
 
     #region Current Stats Properties
 
@@ -116,6 +117,22 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public float CurrentExperienceRatio
+    {
+        get { return currentExperienceRatio; }
+        set
+        {
+            if (currentExperienceRatio != value)
+            {
+                currentExperienceRatio = value;
+                if (GameManager.instance != null)
+                {
+                    GameManager.instance.currentExperienceRatioDisplay.text = "Experience Ratio: " + currentExperienceRatio;
+                }
+            }
+        }
+    }
+
     #endregion
 
     public ParticleSystem damageEffect;
@@ -124,6 +141,7 @@ public class PlayerStats : MonoBehaviour
     //Experience and level  of the player
     [Header ("Experience/Level")]
     public int experience = 0;
+    public float experienceToGive = 0f;
     public int level = 1;
     public int experienceCap;
     public int booksCollected = 0;
@@ -174,6 +192,7 @@ public class PlayerStats : MonoBehaviour
         GameManager.instance.currentMightDisplay.text = "Might: " + currentMight;
         GameManager.instance.currentProjectileSpeedDisplay.text = "Projectile Speed: " + currentProjectileSpeed;
         GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet;
+        GameManager.instance.currentExperienceRatioDisplay.text = "Experience Ratio: " + currentExperienceRatio;
         
         UpdateRageBar();
         UpdateHealthBar();
@@ -196,9 +215,10 @@ public class PlayerStats : MonoBehaviour
         UpdateStatsBasedOnRage();
     }
 
-    public void IncreaseExperience (int amount)
+    public void IncreaseExperience (float amount)
     {
-        experience += amount;
+        experienceToGive = amount * currentExperienceRatio;
+        experience += (int)experienceToGive;
         LevelUpChecker();
         UpdateExpBar();
     }
@@ -279,6 +299,7 @@ public class PlayerStats : MonoBehaviour
         CurrentMight = characterData.Might;
         CurrentProjectileSpeed= characterData.ProjectileSpeed;
         CurrentMagnet = characterData.Magnet;
+        CurrentExperienceRatio = characterData.ExperienceGrantedRatio;
         
         SpawnWeapon(characterData.StartingWeapon);
         SpawnPassiveItem(firstPassiveItemTest);

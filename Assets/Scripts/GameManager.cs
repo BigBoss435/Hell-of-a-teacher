@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI currentMightDisplay;
     public TextMeshProUGUI currentProjectileSpeedDisplay;
     public TextMeshProUGUI currentMagnetDisplay;
+    public TextMeshProUGUI currentExperienceRatioDisplay;
 
     [Header("Results Screen Displays")] 
     public Image chosenCharacterImage;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ExperienceGem : Pickup
 {
-    public int experienceGranted;
+    public float experienceGranted;
     
     public override void Collect()
     {

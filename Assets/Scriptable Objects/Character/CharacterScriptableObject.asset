@@ -22,3 +22,4 @@ MonoBehaviour:
   projectileSpeed: 5
   projectileNumber: 1
   magnet: 1.6
+  experienceGrantedRatio: 1
