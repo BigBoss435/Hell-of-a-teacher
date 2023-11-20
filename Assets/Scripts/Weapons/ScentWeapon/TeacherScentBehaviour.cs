@@ -17,7 +17,7 @@ public class TeacherScentBehaviour : MeleeBehaviour
         if (col.CompareTag("Enemy") && !markedEnemies.Contains(col.gameObject))
         {
             EnemyStats enemy = col.GetComponent<EnemyStats>();
-            enemy.TakeDamage(GetCurrentDamage(), transform.position);
+            enemy.TakeDamage(GetCurrentDamage(), transform.position, 0f);
 
             markedEnemies.Add(col.gameObject);
         }
