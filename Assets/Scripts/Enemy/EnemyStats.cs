@@ -58,7 +58,7 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float dmg, Vector2 sourcePosition, float knockbackForce = 5f, float knockbackDuration = 0.2f)
+    public void TakeDamage(float dmg, Vector2 sourcePosition, float knockbackForce = 3f, float knockbackDuration = 0.2f)
     {
         currentHealth -= dmg;
         StartCoroutine(DamageFlash());
