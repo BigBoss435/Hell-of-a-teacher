@@ -61,7 +61,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 1
+    - _Alpha: 0.57
     - _BUILTIN_QueueControl: -1
     - _BUILTIN_QueueOffset: 0
     - _Depth: 0.469
