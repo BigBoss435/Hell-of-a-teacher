@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: c537e96fbbffc46399703ea4dc7efdda, type: 2}
   destroyAferSeconds: 1
+  rb: {fileID: 0}
+  LastVelocity: {x: 0, y: 0, z: 0}
   swordParticle: {fileID: 913022805162174104, guid: 19f0b1fae21c445fb937bed1fed09237, type: 3}
 --- !u!61 &2635058273231297827
 BoxCollider2D:

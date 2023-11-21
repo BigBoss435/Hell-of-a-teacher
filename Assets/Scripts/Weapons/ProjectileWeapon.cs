@@ -51,41 +51,40 @@ public class ProjectileWeapon : MonoBehaviour
 
         if (dirx < 0 && diry == 0) //left
         {
-            rotation.z = 90f;
             position.x = transform.position.x -0.5f;
         }
         else if (dirx == 0 &&  diry < 0) //down
         {
-            rotation.z = 180f;
+            rotation.z = -90f;
             position.y = transform.position.y - 0.5f;
         }
         else if (dirx == 0 && diry > 0) //up
         {
-            rotation.z = 0f;
+            rotation.z = 90f;
             position.y = transform.position.y + 0.5f;
 
         }
         else if (dir.x > 0 && dir.y > 0) //right up
         {
-            rotation.z = -45f;
+            rotation.z = 45f;
             position.x = transform.position.x + 0.5f;
             position.y = transform.position.y + 0.5f;
         }
         else if (dir.x > 0 && dir.y < 0) //right down
         {
-            rotation.z = -145f;
+            rotation.z = -45f;
             position.x = transform.position.x + 0.5f;
             position.y = transform.position.y - 0.5f;
         }
         else if (dir.x < 0 && dir.y > 0) //left up
         {
-            rotation.z = 45f;
+            rotation.z = 135f;
             position.x = transform.position.x - 0.5f;
             position.y = transform.position.y + 0.5f;
         }
         else if (dir.x < 0 && dir.y < 0) //left down
         {
-            rotation.z = 145f;
+            rotation.z = -135f;
             position.x = transform.position.x - 0.5f;
             position.y = transform.position.y - 0.5f;
         }
