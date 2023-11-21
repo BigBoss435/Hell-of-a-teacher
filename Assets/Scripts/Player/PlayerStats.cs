@@ -18,6 +18,7 @@ public class PlayerStats : MonoBehaviour
     float currentProjectileSpeed;
     float currentMagnet;
     float currentExperienceRatio;
+    int currentBooksRatio;
 
     #region Current Stats Properties
 
@@ -133,6 +134,22 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public int CurrentBooksRatio
+    {
+        get { return currentBooksRatio; }
+        set
+        {
+            if (currentBooksRatio != value)
+            {
+                currentBooksRatio = value;
+                if (GameManager.instance != null)
+                {
+                    GameManager.instance.currentBookRatioDisplay.text = "Books Ratio: " + currentBooksRatio;
+                }
+            }
+        }
+    }
+
     #endregion
 
     public ParticleSystem damageEffect;
@@ -193,6 +210,7 @@ public class PlayerStats : MonoBehaviour
         GameManager.instance.currentProjectileSpeedDisplay.text = "Projectile Speed: " + currentProjectileSpeed;
         GameManager.instance.currentMagnetDisplay.text = "Magnet: " + currentMagnet;
         GameManager.instance.currentExperienceRatioDisplay.text = "Experience Ratio: " + currentExperienceRatio;
+        GameManager.instance.currentBookRatioDisplay.text = "Books Ratio: " + currentBooksRatio;
         
         UpdateRageBar();
         UpdateHealthBar();
@@ -232,7 +250,7 @@ public class PlayerStats : MonoBehaviour
 
     public void IncreaseBooks(int amount)
     {
-        booksCollected += amount;
+        booksCollected = booksCollected + amount * currentBooksRatio;
         UpdateBookText();
     }
 
@@ -300,6 +318,7 @@ public class PlayerStats : MonoBehaviour
         CurrentProjectileSpeed= characterData.ProjectileSpeed;
         CurrentMagnet = characterData.Magnet;
         CurrentExperienceRatio = characterData.ExperienceGrantedRatio;
+        currentBooksRatio = characterData.BooksGrantedRatio;
         
         SpawnWeapon(characterData.StartingWeapon);
         SpawnPassiveItem(firstPassiveItemTest);

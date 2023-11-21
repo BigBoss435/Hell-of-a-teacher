@@ -49,4 +49,8 @@ public class CharacterScriptableObject : ScriptableObject
     [SerializeField] 
     float experienceGrantedRatio;
     public float ExperienceGrantedRatio { get => experienceGrantedRatio; private set => experienceGrantedRatio = value; }
+
+    [SerializeField] 
+    int booksGrantedRatio;
+    public int BooksGrantedRatio { get => booksGrantedRatio; private set => booksGrantedRatio = value; }
 }
