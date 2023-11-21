@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: -1212734201
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0.63506866, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6cb4cdc1c3aed4e7ab3cb135ffd33374, type: 3}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -122,7 +122,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.2, y: 0.2}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -143,3 +143,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d3f5237f7c194fd1a758ae1295436fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  booksSprite: {fileID: 21300000, guid: 8af3f35c97150104f9cb0d7903b858e0, type: 3}
