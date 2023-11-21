@@ -7,10 +7,12 @@ using Random = UnityEngine.Random;
 public class TreasureChest : MonoBehaviour
 {
     InventoryManager inventory;
+    PlayerStats player;
 
     void Start()
     {
         inventory = FindObjectOfType<InventoryManager>();
+        player = FindObjectOfType<PlayerStats>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
@@ -24,6 +26,10 @@ public class TreasureChest : MonoBehaviour
 
     public void OpenTreasureChest()
     {
+        int randAmountOfBooksToGive = Random.Range(5, 30);
+        player.IncreaseBooksWithoutRatio(randAmountOfBooksToGive);
+        GameManager.GenerateFloatingText(randAmountOfBooksToGive.ToString(), transform);
+        
         if (inventory.GetPossibleEvolutions().Count <= 0)
         {
             Debug.LogWarning("No available evolutions");

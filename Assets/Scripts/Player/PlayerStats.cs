@@ -254,6 +254,12 @@ public class PlayerStats : MonoBehaviour
         UpdateBookText();
     }
 
+    public void IncreaseBooksWithoutRatio(int amount)
+    {
+        booksCollected += amount;
+        UpdateBookText();
+    }
+
     void LevelUpChecker()
     {
         if (experience >= experienceCap)
