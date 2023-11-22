@@ -340,4 +340,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074694df408dc7c4f88db38f11992e03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drops: []
+  drops:
+  - name: 
+    itemPrefab: {fileID: 1801770931798691589, guid: 4285f2f55ac74e049a5a7d46bfdc28f6, type: 3}
+    dropRate: 75
+  - name: 
+    itemPrefab: {fileID: 718983985276072283, guid: ef2056795d36a4db887eefed7f670661, type: 3}
+    dropRate: 20
+  - name: 
+    itemPrefab: {fileID: 898694032936567308, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
+    dropRate: 5

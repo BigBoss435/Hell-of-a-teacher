@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8773585, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -837,7 +837,7 @@ MonoBehaviour:
   - {fileID: 325251037}
   - {fileID: 1103602451}
   - {fileID: 1627128379}
-  timeLimit: 75
+  timeLimit: 300
   stopwatchDisplay: {fileID: 23363011}
   killCount: 0
   killCountDisplay: {fileID: 1284529690}
@@ -3186,30 +3186,82 @@ MonoBehaviour:
   waves:
   - waveName: 1
     enemyGroups:
-    - enemyName: Druid
-      enemyCount: 5
-      spawnCount: 0
-      enemyPrefab: {fileID: 683226769124728415, guid: af58fb98b76cf824b91cc605c0989f4f, type: 3}
-    - enemyName: Bush
-      enemyCount: 5
-      spawnCount: 0
-      enemyPrefab: {fileID: 7029901560226710811, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-    - enemyName: Eye
-      enemyCount: 5
-      spawnCount: 0
-      enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
-    - enemyName: mWor,
-      enemyCount: 5
+    - enemyName: Worm
+      enemyCount: 50
       spawnCount: 0
       enemyPrefab: {fileID: 3151835268032525944, guid: c8fbc4299037c0b439776c7fac5f54ba, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
+  - waveName: 2
+    enemyGroups:
+    - enemyName: Worm
+      enemyCount: 30
+      spawnCount: 0
+      enemyPrefab: {fileID: 3151835268032525944, guid: c8fbc4299037c0b439776c7fac5f54ba, type: 3}
+    - enemyName: Eye
+      enemyCount: 30
+      spawnCount: 0
+      enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: 3
+    enemyGroups:
+    - enemyName: Worm
+      enemyCount: 30
+      spawnCount: 0
+      enemyPrefab: {fileID: 3151835268032525944, guid: c8fbc4299037c0b439776c7fac5f54ba, type: 3}
+    - enemyName: Eye
+      enemyCount: 30
+      spawnCount: 0
+      enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
+    - enemyName: Eye
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 7029901560226710811, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: 4
+    enemyGroups:
+    - enemyName: Worm
+      enemyCount: 30
+      spawnCount: 0
+      enemyPrefab: {fileID: 3151835268032525944, guid: c8fbc4299037c0b439776c7fac5f54ba, type: 3}
+    - enemyName: Eye
+      enemyCount: 30
+      spawnCount: 0
+      enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
+    - enemyName: Eye
+      enemyCount: 40
+      spawnCount: 0
+      enemyPrefab: {fileID: 7029901560226710811, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
+    - enemyName: Eye
+      enemyCount: 10
+      spawnCount: 0
+      enemyPrefab: {fileID: 683226769124728415, guid: af58fb98b76cf824b91cc605c0989f4f, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: 5
+    enemyGroups:
+    - enemyName: Druid
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 683226769124728415, guid: af58fb98b76cf824b91cc605c0989f4f, type: 3}
+    - enemyName: Eye
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 20
+  maxEnemiesAllowed: 100
   maximumEnemiesReached: 0
-  waveInterval: 3
+  waveInterval: 60
   relativeSpawnPoints:
   - {fileID: 629736518}
   - {fileID: 253435208}
@@ -3705,7 +3757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8773585, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4046,63 +4098,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715579206}
   m_CullTransparentMesh: 1
---- !u!1001 &715870600
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.322
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4042501285024060820, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7029901560226710811, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
-      propertyPath: m_Name
-      value: CrazyBush_0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
 --- !u!1 &726006968
 GameObject:
   m_ObjectHideFlags: 0
@@ -6753,7 +6748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8773585, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -12509,63 +12504,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &6418799784346140671
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 898694032936567308, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_Name
-      value: Treasure Chest
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.21
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6511590674391612484, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 20acf05e41dce4d358e7994825792b68, type: 3}
 --- !u!58 &6561016925597793802
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12841,6 +12779,4 @@ SceneRoots:
   - {fileID: 170602610}
   - {fileID: 549566082}
   - {fileID: 981744630}
-  - {fileID: 6418799784346140671}
-  - {fileID: 715870600}
   - {fileID: 357158111}
