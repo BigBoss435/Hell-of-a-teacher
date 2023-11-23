@@ -138,6 +138,7 @@ public class InventoryManager : MonoBehaviour
         
         foreach (var upgradeOption in upgradeUIOptions)
         {
+            Debug.Log(availableWeaponUpgrades.Count + " " + availablePassiveItemUpgrades.Count);
             if (availableWeaponUpgrades.Count == 0 && availablePassiveItemUpgrades.Count == 0)
             {
                 return;
@@ -244,7 +245,7 @@ public class InventoryManager : MonoBehaviour
                     if (newPassiveItem)
                     {
                         upgradeOption.upgradeButton.onClick.AddListener(() => player.SpawnPassiveItem(chosenPassiveItemUpgrade.initialPassiveItem));
-                        upgradeOption.upgradeNameDisplay.text = chosenPassiveItemUpgrade.passiveItemData.Description;
+                        upgradeOption.upgradeDescriptionDisplay.text = chosenPassiveItemUpgrade.passiveItemData.Description;
                         upgradeOption.upgradeNameDisplay.text = chosenPassiveItemUpgrade.passiveItemData.Name;
                     }
                     
