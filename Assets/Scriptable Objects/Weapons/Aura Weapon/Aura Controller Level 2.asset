@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
   m_Name: Aura Controller Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9027429894353620703, guid: 91fba6e7d39684179a9b9d0476949f97, type: 3}
+  prefab: {fileID: 7906426677086378690, guid: 3730a4483a7e14fff901b7148fd8057a, type: 3}
   damage: 10
   speed: 1
   cooldownDuration: 1
