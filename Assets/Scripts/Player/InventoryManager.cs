@@ -184,6 +184,7 @@ public class InventoryManager : MonoBehaviour
                                 
                                 upgradeOption.upgradeButton.onClick.AddListener(() => LevelUpWeapon(i, chosenWeaponUpgrade.weaponUpgradeIndex));
                                 upgradeOption.upgradeDescriptionDisplay.text = chosenWeaponUpgrade.weaponData.NextLevelPrefab.GetComponent<WeaponController>().weaponData.Description;
+                                Debug.Log("Description set: " + chosenWeaponUpgrade.weaponData.Description);
                                 upgradeOption.upgradeNameDisplay.text = chosenWeaponUpgrade.weaponData.NextLevelPrefab.GetComponent<WeaponController>().weaponData.Name;
                             }
                             break;
@@ -196,7 +197,7 @@ public class InventoryManager : MonoBehaviour
                     if (newWeapon)
                     {
                         upgradeOption.upgradeButton.onClick.AddListener(() => player.SpawnWeapon(chosenWeaponUpgrade.initialWeapon));
-                        upgradeOption.upgradeNameDisplay.text = chosenWeaponUpgrade.weaponData.Description;
+                        upgradeOption.upgradeDescriptionDisplay.text = chosenWeaponUpgrade.weaponData.Description;
                         upgradeOption.upgradeNameDisplay.text = chosenWeaponUpgrade.weaponData.Name;
                     }
 
