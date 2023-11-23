@@ -50,6 +50,9 @@ public class InventoryManager : MonoBehaviour
     public List<WeaponEvolutionBlueprint> weaponEvolutions = new List<WeaponEvolutionBlueprint>();
 
     PlayerStats player;
+    
+    [HideInInspector]
+    public static bool noMoreUpgrades = false;
 
     void Start()
     {
@@ -140,6 +143,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (availableWeaponUpgrades.Count == 0 && availablePassiveItemUpgrades.Count == 0)
             {
+                noMoreUpgrades = true;
                 return;
             }
 
