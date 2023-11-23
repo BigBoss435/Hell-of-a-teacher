@@ -31,6 +31,7 @@ public class TreasureChest : MonoBehaviour
         player.IncreaseBooksWithoutRatio(randAmountOfBooksToGive);
         GameManager.GenerateFloatingText(randAmountOfBooksToGive.ToString(), transform);
         
+        /*
         if (inventory.GetPossibleEvolutions().Count <= 0)
         {
             Debug.LogWarning("No available evolutions");
@@ -39,5 +40,6 @@ public class TreasureChest : MonoBehaviour
         
         WeaponEvolutionBlueprint toEvolve = inventory.GetPossibleEvolutions()[Random.Range(0, inventory.GetPossibleEvolutions().Count)];
         inventory.EvolveWeapon(toEvolve);
+        */
     }
 }
