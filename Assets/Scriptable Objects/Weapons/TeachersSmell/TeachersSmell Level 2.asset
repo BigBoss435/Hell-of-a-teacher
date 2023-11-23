@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
-  m_Name: Chalk Weapon Level 2
+  m_Name: TeachersSmell Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5566822604008826795, guid: d0493ac553be94a509772994a0a3c5da, type: 3}
-  damage: 10
-  speed: 5
-  cooldownDuration: 1
+  prefab: {fileID: 6353409420526057539, guid: fa5bc28556498d84c92ed8360d03cff7, type: 3}
+  damage: 15
+  speed: 1
+  cooldownDuration: 3
   pierce: 1
   level: 2
   nextLevelPrefab: {fileID: 0}
-  name: Chalk Level 2
+  name: Teacher's Smell
   description: Increased damage by 5
-  icon: {fileID: 21300000, guid: ef479837c9162014c9e425b0dfd92f85, type: 3}
+  icon: {fileID: 21300000, guid: c946a8822b484ef4b856ab9fe1e7a9b2, type: 3}
   evolvedUpgradeToRemove: 0

@@ -309,10 +309,6 @@ public class GameManager : MonoBehaviour
 
     public void StartLevelUp()
     {
-        if (InventoryManager.noMoreUpgrades)
-        {
-            return;
-        }
         ChangeState(GameState.LevelUp);
         playerObject.SendMessage("RemoveAndApplyUpgrades");
     }

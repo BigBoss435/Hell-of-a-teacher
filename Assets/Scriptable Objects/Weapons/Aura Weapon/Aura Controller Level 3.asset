@@ -17,8 +17,9 @@ MonoBehaviour:
   speed: 1
   cooldownDuration: 1
   pierce: 1
-  level: 1
+  level: 3
   nextLevelPrefab: {fileID: 0}
   name: Math teacher's Aura Level 3
   description: Increased damage by 5
   icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  evolvedUpgradeToRemove: 0

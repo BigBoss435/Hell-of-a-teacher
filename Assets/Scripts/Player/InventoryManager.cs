@@ -52,7 +52,7 @@ public class InventoryManager : MonoBehaviour
     PlayerStats player;
     
     [HideInInspector]
-    public static bool noMoreUpgrades = false;
+    public bool noMoreUpgrades = false;
 
     void Start()
     {

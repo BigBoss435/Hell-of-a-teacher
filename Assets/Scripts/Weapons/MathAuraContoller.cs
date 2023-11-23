@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SmellController : WeaponController
+public class MathAuraController : WeaponController
 {
     // Start is called before the first frame update
     protected override void Start()
