@@ -16,7 +16,7 @@ MonoBehaviour:
   damage: 5
   speed: 5
   cooldownDuration: 1
-  pierce: 5
+  pierce: 1
   level: 1
   nextLevelPrefab: {fileID: 8792032455652870013, guid: 1d1883332538741eaaaa5afb14d57cf2, type: 3}
   name: Chalk

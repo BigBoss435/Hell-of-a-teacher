@@ -16,7 +16,7 @@ MonoBehaviour:
   damage: 10
   speed: 5
   cooldownDuration: 1
-  pierce: 5
+  pierce: 1
   level: 1
   nextLevelPrefab: {fileID: 0}
   name: Chalk Level 2
