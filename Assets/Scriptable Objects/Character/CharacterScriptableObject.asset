@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icon: {fileID: 873676504, guid: 0fa461e839186b74ba74b652df6db33c, type: 3}
   name: Math Teacher
-  startingWeapon: {fileID: 9027429894353620703, guid: 0add73f2cf55b428cbc5dfdef6fe7238, type: 3}
+  startingWeapon: {fileID: 3730900938454673155, guid: 3a235e036ffe64f7f86f9be7c136d8b1, type: 3}
   maxHealth: 1000
   recovery: 1
   moveSpeed: 3

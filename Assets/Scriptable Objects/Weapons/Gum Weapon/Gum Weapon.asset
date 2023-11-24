@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6753783031799295469, guid: 7c863d06eded54880a1603dfcee5637c, type: 3}
   damage: 5
-  speed: 10
+  speed: 5
   cooldownDuration: 1
-  pierce: 10
+  pierce: 3
   level: 1
-  nextLevelPrefab: {fileID: 0}
+  projectileNumber: 1
+  nextLevelPrefab: {fileID: 3730900938454673155, guid: eda05ca8f9df4493d92829e6f607376c, type: 3}
   name: Gum
   description: Shoots gum that bounces
   icon: {fileID: 21300000, guid: 3ed85d9ae23a39d4686467871f3f28b9, type: 3}

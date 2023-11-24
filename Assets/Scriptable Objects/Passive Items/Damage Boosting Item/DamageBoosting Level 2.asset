@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50f8559f93919411c932357b8b1cd12a, type: 3}
   m_Name: DamageBoosting Level 2
   m_EditorClassIdentifier: 
-  multiplier: 120
-  level: 1
-  nextLevelPrefab: {fileID: 0}
+  multiplier: 10
+  level: 2
+  nextLevelPrefab: {fileID: 7235079407376830332, guid: b59432a556f65492fbf1d060abbfa440, type: 3}
   name: Damage Booster
   description: Increases damage by another 10%
   icon: {fileID: 0}

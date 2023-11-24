@@ -8,5 +8,6 @@ public class DamageBoostingItem : PassiveItem
     protected override void ApplyModifier()
     {
         player.CurrentMight *= 1 + passiveItemData.Multiplier / 100f;
+        Debug.Log("Might: " + player.CurrentMight);
     }
 }

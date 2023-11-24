@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
-  m_Name: Aura Controller Level 2
+  m_Name: Gum Weapon Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7906426677086378690, guid: e836718d6805d4ac4bb765eabc595327, type: 3}
+  prefab: {fileID: 6753783031799295469, guid: 82195ec7c1dd942a09115be695fd31f7, type: 3}
   damage: 10
-  speed: 1
+  speed: 5
   cooldownDuration: 1
-  pierce: 1
+  pierce: 3
   level: 2
-  projectileNumber: 0
-  nextLevelPrefab: {fileID: 9027429894353620703, guid: c7bb04362eae541d38d4dc0dbebb8b65, type: 3}
-  name: Math teacher's Aura Level 2
+  projectileNumber: 1
+  nextLevelPrefab: {fileID: 0}
+  name: Gum
   description: Increased damage by 5
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 3ed85d9ae23a39d4686467871f3f28b9, type: 3}
   evolvedUpgradeToRemove: 0

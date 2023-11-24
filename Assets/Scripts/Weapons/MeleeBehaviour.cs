@@ -12,7 +12,7 @@ public class MeleeBehaviour : MonoBehaviour
     //Current stats
     protected float currentDamage;
     protected float currentSpeed;
-    protected float currentCooldonwDuration;
+    protected float currentCooldownDuration;
     protected int currentPierce;
 
 
@@ -20,7 +20,7 @@ public class MeleeBehaviour : MonoBehaviour
     {
         currentDamage = weaponData.Damage;
         currentSpeed = weaponData.Speed;
-        currentCooldonwDuration = weaponData.CooldownDuration;
+        currentCooldownDuration = weaponData.CooldownDuration;
         currentPierce = weaponData.Pierce;
     }
     

@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
   m_Name: Aura Controller Level 3
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7906426677086378690, guid: 3730a4483a7e14fff901b7148fd8057a, type: 3}
+  prefab: {fileID: 7906426677086378690, guid: 8821dbdbb3ebf475583447070bb4a216, type: 3}
   damage: 15
   speed: 1
   cooldownDuration: 1
   pierce: 1
   level: 3
+  projectileNumber: 0
   nextLevelPrefab: {fileID: 0}
   name: Math teacher's Aura Level 3
   description: Increased damage by 5
