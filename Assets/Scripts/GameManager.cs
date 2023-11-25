@@ -128,11 +128,12 @@ public class GameManager : MonoBehaviour
         tmPro.horizontalAlignment = HorizontalAlignmentOptions.Center;
         tmPro.verticalAlignment = VerticalAlignmentOptions.Middle;
         tmPro.fontSize = textFontSize;
+        tmPro.raycastTarget = false;
         if (textFont) tmPro.font = textFont;
         rect.position = referenceCamera.WorldToScreenPoint(target.position);
         
         Destroy(textObj, duration);
-        
+
         textObj.transform.SetParent(instance.damageTextCanvas.transform);
 
         WaitForEndOfFrame w = new WaitForEndOfFrame();
@@ -141,6 +142,7 @@ public class GameManager : MonoBehaviour
         while (t < duration)
         {
             yield return w;
+            
             t += Time.deltaTime;
 
             tmPro.color = new Color(tmPro.color.r, tmPro.color.g, tmPro.color.b, 1 - t / duration);

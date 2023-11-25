@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4314211918457294147}
   - component: {fileID: 8273361997083805620}
   - component: {fileID: 3800793690509504312}
+  - component: {fileID: -4078710576681176812}
   m_Layer: 6
   m_Name: Aura Weapon Level 3
   m_TagString: Untagged
@@ -82,3 +83,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &-4078710576681176812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7906426677086378690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e71d797db2541164da3f1c51694eba32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
