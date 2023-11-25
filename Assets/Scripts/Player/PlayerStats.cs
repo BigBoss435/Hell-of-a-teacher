@@ -223,6 +223,7 @@ public class PlayerStats : MonoBehaviour
     {
         if(invincibilityTimer > 0)
         {
+            SetInvincibilityIfRageBarFull();
             invincibilityTimer -= Time.deltaTime;
         }
         else if (isInvincible)
@@ -244,7 +245,6 @@ public class PlayerStats : MonoBehaviour
     public void IncreaseRage(int amount)
     {
         rageMeter.AddRage(amount);
-        Debug.Log(rageMeter.currentRage);
         UpdateRageBar();
     }
 
@@ -279,11 +279,8 @@ public class PlayerStats : MonoBehaviour
             experienceCap += experienceCapIncrease;
             
             UpdateLevelText();
-
-            if (!inventory.noMoreUpgrades)
-            {
-                GameManager.instance.StartLevelUp();
-            }
+            
+            GameManager.instance.StartLevelUp();
         }
     }
 
@@ -344,6 +341,7 @@ public class PlayerStats : MonoBehaviour
             if (damageEffect) Instantiate(damageEffect, transform.position, Quaternion.identity);
 
             invincibilityTimer = invincibilityDuration;
+            Debug.Log("Non rage" + invincibilityTimer);
             isInvincible = true;
 
             if (CurrentHealth <= 0)
@@ -356,6 +354,16 @@ public class PlayerStats : MonoBehaviour
         else
         {
             damageSound = false;
+        }
+    }
+
+    void SetInvincibilityIfRageBarFull()
+    {
+        if (rageMeter.currentRage == rageMeter.oldRageCap)
+        {
+            isInvincible = true;
+            invincibilityTimer = 5f;
+            Debug.Log(invincibilityTimer);
         }
     }
 

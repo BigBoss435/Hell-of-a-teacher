@@ -7,6 +7,7 @@ public class RageMeter : MonoBehaviour
 {
     public int currentRage = 0;
     public int rageCap = 100;
+    public int oldRageCap = 100;
     
     public void AddRage(int amount)
     {
@@ -14,6 +15,7 @@ public class RageMeter : MonoBehaviour
         if (currentRage >= rageCap)
         {
             currentRage = rageCap;
+            oldRageCap = rageCap;
             IncreaseRageCap();
         }
     }
@@ -40,6 +42,6 @@ public class RageMeter : MonoBehaviour
     
     public void IncreaseRageCap()
     {
-        rageCap *= 10;
+        rageCap *= 2;
     }
 }

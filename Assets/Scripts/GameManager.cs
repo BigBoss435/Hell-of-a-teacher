@@ -110,7 +110,6 @@ public class GameManager : MonoBehaviour
                 {
                     choosingUpgrade = true;
                     Time.timeScale = 0f;
-                    Debug.Log("Upgrades shown");
                     levelUpScreen.SetActive(true);
                 }
                 break;
