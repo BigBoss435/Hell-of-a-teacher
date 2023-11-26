@@ -888,6 +888,7 @@ MonoBehaviour:
   isGameOver: 0
   choosingUpgrade: 0
   playerObject: {fileID: 4484793921296096268}
+  bookIcon: {fileID: 21300000, guid: 8af3f35c97150104f9cb0d7903b858e0, type: 3}
 --- !u!4 &170602610
 Transform:
   m_ObjectHideFlags: 0
@@ -12322,6 +12323,10 @@ MonoBehaviour:
   - passiveItemUpgradeIndex: 3
     initialPassiveItem: {fileID: 6180232632180066804, guid: 8190c458239d44031a54fa83c1bd35fb, type: 3}
     passiveItemData: {fileID: 11400000, guid: 30377919b95f94cb89c0892fa45e2aee, type: 2}
+  pickUpOptions:
+  - pickUpIndex: 0
+    initialPickUp: {fileID: 718983985276072283, guid: ef2056795d36a4db887eefed7f670661, type: 3}
+    pickUpIcon: {fileID: 21300000, guid: 8af3f35c97150104f9cb0d7903b858e0, type: 3}
   upgradeUIOptions:
   - upgradeNameDisplay: {fileID: 1415041258}
     upgradeDescriptionDisplay: {fileID: 879816088}

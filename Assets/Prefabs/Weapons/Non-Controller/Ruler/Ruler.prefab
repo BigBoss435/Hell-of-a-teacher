@@ -146,7 +146,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: 6f838b6457d8bd84ead8e312f0e00f21, type: 2}
   destroyAfterSeconds: 1
-  rulerParticle: {fileID: 0}
 --- !u!114 &-1131939805554328296
 MonoBehaviour:
   m_ObjectHideFlags: 0

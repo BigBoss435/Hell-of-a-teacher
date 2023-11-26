@@ -36,7 +36,7 @@ public class MeleeBehaviour : MonoBehaviour
         {
             currentDamage -= random;
         }
-        return currentDamage *= FindObjectOfType<PlayerStats>().CurrentMight;
+        return currentDamage * FindObjectOfType<PlayerStats>().CurrentMight;
     }
 
     protected virtual void Start()

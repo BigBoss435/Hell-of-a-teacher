@@ -141,12 +141,12 @@ public class InventoryManager : MonoBehaviour
         
         foreach (var upgradeOption in upgradeUIOptions)
         {
+            int upgradeType;
+            
             if (availableWeaponUpgrades.Count == 0 && availablePassiveItemUpgrades.Count == 0)
             {
                 return;
             }
-
-            int upgradeType;
 
             if (availableWeaponUpgrades.Count == 0)
             {
@@ -252,6 +252,17 @@ public class InventoryManager : MonoBehaviour
                     upgradeOption.upgradeIcon.sprite = chosenPassiveItemUpgrade.passiveItemData.Icon;
 
                 }
+            }
+            else if (upgradeType == 3)
+            {
+                int booksToGrant = Random.Range(10, 40);
+                EnableUpgradeUI(upgradeOption);
+                    
+                upgradeOption.upgradeButton.onClick.AddListener(() => player.IncreaseBooksLevelUp(booksToGrant));
+                upgradeOption.upgradeDescriptionDisplay.text = "Grants: " + booksToGrant + " Books";
+                upgradeOption.upgradeNameDisplay.text = "Books";
+                
+                upgradeOption.upgradeIcon.sprite = GameManager.instance.bookIcon;
             }
         }
     }

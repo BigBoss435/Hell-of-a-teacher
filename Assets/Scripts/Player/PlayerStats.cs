@@ -253,6 +253,16 @@ public class PlayerStats : MonoBehaviour
         booksCollected = booksCollected + amount * currentBooksRatio;
         UpdateBookText();
     }
+    
+    public void IncreaseBooksLevelUp(int amount)
+    {
+        booksCollected += amount;
+        UpdateBookText();
+        if (GameManager.instance != null && GameManager.instance.choosingUpgrade)
+        {
+            GameManager.instance.EndLevelUp();
+        }
+    }
 
     public void IncreaseBooksWithoutRatio(int amount)
     {

@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
     public bool choosingUpgrade = false;
 
     public GameObject playerObject;
+    public Sprite bookIcon;
 
     void Awake()
     {
