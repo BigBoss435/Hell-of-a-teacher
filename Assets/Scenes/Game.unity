@@ -12759,7 +12759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 879336408947c054eb570aff06f6f111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pullSpeed: 200
+  pullSpeed: 100
 --- !u!1 &7799402905115738827
 GameObject:
   m_ObjectHideFlags: 0
@@ -12921,8 +12921,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47f8435829d094300a33904ba04355f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerCollector: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
