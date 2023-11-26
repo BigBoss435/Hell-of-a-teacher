@@ -17,4 +17,4 @@ MonoBehaviour:
   nextLevelPrefab: {fileID: 6355090335336027728, guid: fc590eb4af9434a2bbb877e8e9690ecb, type: 3}
   name: Teacher's Wisdom
   description: Increases XP gained by 10%
-  icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: a18173459e68ce84e9c44ec15707492a, type: 3}
