@@ -22,5 +22,5 @@ MonoBehaviour:
   nextLevelPrefab: {fileID: 0}
   name: Math teacher's Aura Level 3
   description: Increased damage by 5
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 873046e92e670c4408b7584d24bff63b, type: 3}
   evolvedUpgradeToRemove: 0

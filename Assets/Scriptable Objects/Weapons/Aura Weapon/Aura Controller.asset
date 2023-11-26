@@ -18,7 +18,9 @@ MonoBehaviour:
   cooldownDuration: 1
   pierce: 1
   level: 1
+  projectileNumber: 0
   nextLevelPrefab: {fileID: 9027429894353620703, guid: 91fba6e7d39684179a9b9d0476949f97, type: 3}
   name: Math teacher's Aura
   description: Kills enemies that come too close
-  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 873046e92e670c4408b7584d24bff63b, type: 3}
+  evolvedUpgradeToRemove: 0
