@@ -12218,9 +12218,9 @@ GameObject:
   - component: {fileID: 3605648552338432802}
   - component: {fileID: 6561016925597793802}
   - component: {fileID: 7522223060566621301}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collector
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12470,6 +12470,7 @@ GameObject:
   - component: {fileID: 1302166563177131323}
   - component: {fileID: 9154414517161428826}
   - component: {fileID: 1656372408121171536}
+  - component: {fileID: 9154414517161428827}
   m_Layer: 6
   m_Name: MathTeacher
   m_TagString: Player
@@ -12758,7 +12759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 879336408947c054eb570aff06f6f111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pullSpeed: 0
+  pullSpeed: 200
 --- !u!1 &7799402905115738827
 GameObject:
   m_ObjectHideFlags: 0
@@ -12908,6 +12909,20 @@ MonoBehaviour:
   currentRage: 0
   rageCap: 100
   oldRageCap: 100
+--- !u!114 &9154414517161428827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4484793921296096268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f8435829d094300a33904ba04355f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  playerCollector: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

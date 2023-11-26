@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2368709919620837101}
   - component: {fileID: 6311783823739112765}
   - component: {fileID: -4191588608447228638}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Experience Gem
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,8 +85,8 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
