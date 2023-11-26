@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ProjectileWeapon : MonoBehaviour
 {
@@ -30,6 +31,16 @@ public class ProjectileWeapon : MonoBehaviour
     
     public float GetCurrentDamage()
     {
+        float random = Random.Range(1, 3);
+        float selectType = Random.Range(0, 2);
+        if (selectType == 0)
+        {
+            currentDamage += random;
+        }
+        else
+        {
+            currentDamage -= random;
+        }
         return currentDamage * FindObjectOfType<PlayerStats>().CurrentMight;
     }
     
