@@ -146,7 +146,7 @@ MonoBehaviour:
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   damageFlashDuration: 0.2
   damageFadeTime: 0.6
-  deathFadeTime: 0
+  deathFadeTime: 0.6
 --- !u!82 &-1046976789037093354
 AudioSource:
   m_ObjectHideFlags: 0

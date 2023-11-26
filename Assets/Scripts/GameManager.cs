@@ -241,7 +241,7 @@ public class GameManager : MonoBehaviour
     
     public void AssignBooksCollectedUI(int booksCollected)
     {
-        booksCollectedDisplay.text = booksCollected.ToString();
+        booksCollectedDisplay.text = booksCollected + " kg";
     }
 
     public void AssignChosenWeaponsAndPassiveItemsUI(List<Image> chosenWeaponsData, List<Image> chosenPassiveItemsData)
