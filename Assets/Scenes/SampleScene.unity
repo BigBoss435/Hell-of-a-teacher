@@ -234,8 +234,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 25, y: 25}
+  m_AnchoredPosition: {x: 0.52325, y: -0.52325}
+  m_SizeDelta: {x: 64.953, y: 64.954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &17911245
 MonoBehaviour:
@@ -3231,24 +3231,24 @@ MonoBehaviour:
   - waveName: 1
     enemyGroups:
     - enemyName: Worm
-      enemyCount: 50
+      enemyCount: 200
       spawnCount: 0
       enemyPrefab: {fileID: 3151835268032525944, guid: c8fbc4299037c0b439776c7fac5f54ba, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 0.2
     spawnCount: 0
   - waveName: 2
     enemyGroups:
     - enemyName: Worm
-      enemyCount: 30
+      enemyCount: 300
       spawnCount: 0
       enemyPrefab: {fileID: 3151835268032525944, guid: c8fbc4299037c0b439776c7fac5f54ba, type: 3}
     - enemyName: Eye
-      enemyCount: 30
+      enemyCount: 100
       spawnCount: 0
       enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 0.2
     spawnCount: 0
   - waveName: 3
     enemyGroups:
@@ -3261,11 +3261,11 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
     - enemyName: Eye
-      enemyCount: 10
+      enemyCount: 300
       spawnCount: 0
       enemyPrefab: {fileID: 7029901560226710811, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 0.2
     spawnCount: 0
   - waveName: 4
     enemyGroups:
@@ -3274,28 +3274,28 @@ MonoBehaviour:
       spawnCount: 0
       enemyPrefab: {fileID: 3151835268032525944, guid: c8fbc4299037c0b439776c7fac5f54ba, type: 3}
     - enemyName: Eye
-      enemyCount: 30
+      enemyCount: 100
       spawnCount: 0
       enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
     - enemyName: Eye
-      enemyCount: 40
+      enemyCount: 150
       spawnCount: 0
       enemyPrefab: {fileID: 7029901560226710811, guid: ef533742728bd6247befb02cfe36c52f, type: 3}
     - enemyName: Eye
-      enemyCount: 10
+      enemyCount: 150
       spawnCount: 0
       enemyPrefab: {fileID: 683226769124728415, guid: af58fb98b76cf824b91cc605c0989f4f, type: 3}
     waveQuota: 0
-    spawnInterval: 1
+    spawnInterval: 0.2
     spawnCount: 0
   - waveName: 5
     enemyGroups:
     - enemyName: Druid
-      enemyCount: 50
+      enemyCount: 200
       spawnCount: 0
       enemyPrefab: {fileID: 683226769124728415, guid: af58fb98b76cf824b91cc605c0989f4f, type: 3}
     - enemyName: Eye
-      enemyCount: 50
+      enemyCount: 200
       spawnCount: 0
       enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
     waveQuota: 0
@@ -3303,9 +3303,9 @@ MonoBehaviour:
     spawnCount: 0
   currentWaveCount: 0
   enemiesAlive: 0
-  maxEnemiesAllowed: 100
+  maxEnemiesAllowed: 600
   maximumEnemiesReached: 0
-  waveInterval: 60
+  waveInterval: 30
   relativeSpawnPoints:
   - {fileID: 629736518}
   - {fileID: 253435208}
@@ -3785,8 +3785,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 25, y: 25}
+  m_AnchoredPosition: {x: -0.12112045, y: 0.12112}
+  m_SizeDelta: {x: 65.758, y: 65.758}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &631055791
 MonoBehaviour:
@@ -6776,8 +6776,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 25, y: 25}
+  m_AnchoredPosition: {x: -0.03995514, y: 0.039826}
+  m_SizeDelta: {x: 65.92, y: 65.921}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1119046456
 MonoBehaviour:
@@ -9472,8 +9472,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 25, y: 25}
+  m_AnchoredPosition: {x: -0.6100197, y: 0.61002016}
+  m_SizeDelta: {x: 64.78, y: 64.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1519840607
 MonoBehaviour:
