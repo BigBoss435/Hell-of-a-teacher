@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4503738489765005209}
   - component: {fileID: 4912938007781594543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,9 +102,9 @@ GameObject:
   - component: {fileID: 4389633987200699949}
   - component: {fileID: 7241776108002135819}
   - component: {fileID: 578997948657648027}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RedBall
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
