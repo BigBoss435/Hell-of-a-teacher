@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Aura Controller Level 2
   m_EditorClassIdentifier: 
   prefab: {fileID: 7906426677086378690, guid: e836718d6805d4ac4bb765eabc595327, type: 3}
-  damage: 5
+  damage: 3
   speed: 1
   cooldownDuration: 1
   pierce: 1

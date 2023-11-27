@@ -12,12 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
   m_Name: TeachersSmell
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9162240251080051876, guid: 65e6df156aa9f0a4a9fb65e9254c6bd7, type: 3}
+  prefab: {fileID: 9162240251080051876, guid: 04ed713c39b79ce4b91129abe62cde85, type: 3}
   damage: 10
   speed: 1
   cooldownDuration: 3
   pierce: 1
   level: 1
+  projectileNumber: 0
   nextLevelPrefab: {fileID: 6353409420526057539, guid: a20e24265968c4ba08338bac410bc6bf, type: 3}
   name: Teacher's Smell
   description: Creates damaging areas

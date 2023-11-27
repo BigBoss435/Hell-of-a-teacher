@@ -18,7 +18,8 @@ MonoBehaviour:
   cooldownDuration: 1
   pierce: 10
   level: 1
-  nextLevelPrefab: {fileID: 0}
+  projectileNumber: 0
+  nextLevelPrefab: {fileID: 3185710855845669270, guid: 06c3e3c77b03f4aa78f516064ffc37ef, type: 3}
   name: Ruler
   description: Attacks in front of the teacher
   icon: {fileID: 21300000, guid: 0d4f10e8799aabe4882b22f8b5b586e5, type: 3}

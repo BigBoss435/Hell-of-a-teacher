@@ -158,7 +158,7 @@ public class InventoryManager : MonoBehaviour
             }
             else
             {
-                upgradeType = Random.Range(1, 3);
+                upgradeType = Random.Range(1, 4);
             }
             
             if (upgradeType == 1)

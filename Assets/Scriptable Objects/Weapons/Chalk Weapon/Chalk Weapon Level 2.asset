@@ -19,7 +19,7 @@ MonoBehaviour:
   pierce: 1
   level: 2
   projectileNumber: 2
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 8792032455652870013, guid: 63d10edf3ff8944f0a9755d0937c7429, type: 3}
   name: Chalk Level 2
   description: Fires an additional projectile
   icon: {fileID: 21300000, guid: ef479837c9162014c9e425b0dfd92f85, type: 3}

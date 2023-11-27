@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
   m_Name: TeachersSmell Level 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6353409420526057539, guid: fa5bc28556498d84c92ed8360d03cff7, type: 3}
+  prefab: {fileID: 9162240251080051876, guid: f29b8f80388724e7dbc2165fb855d6cd, type: 3}
   damage: 15
   speed: 1
   cooldownDuration: 3
   pierce: 1
   level: 2
-  nextLevelPrefab: {fileID: 0}
-  name: Teacher's Smell
+  projectileNumber: 0
+  nextLevelPrefab: {fileID: 6353409420526057539, guid: 3e8144fb60e194797b6e8be6b1a4bc59, type: 3}
+  name: Teacher's Smell Level 2
   description: Increased damage by 5
   icon: {fileID: 21300000, guid: c946a8822b484ef4b856ab9fe1e7a9b2, type: 3}
   evolvedUpgradeToRemove: 0

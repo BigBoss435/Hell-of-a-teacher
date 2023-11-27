@@ -15,6 +15,6 @@ MonoBehaviour:
   multiplier: 10
   level: 2
   nextLevelPrefab: {fileID: 0}
-  name: Teacher's Wisdom
+  name: Teacher's Wisdom Level 2
   description: Increases XP gained by another 10%
   icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
