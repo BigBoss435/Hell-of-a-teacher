@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3208322817518855780}
   - component: {fileID: 6074358482818936423}
-  - component: {fileID: -4579773711499781239}
+  - component: {fileID: 2270369484989308576}
   m_Layer: 8
   m_Name: Ruler Level 4
   m_TagString: Player
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &-4579773711499781239
+--- !u!95 &2270369484989308576
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -173,7 +173,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.7, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -184,7 +184,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.97, y: 1}
+  m_Size: {x: 0.5, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &7330813232387921203
 MonoBehaviour:
@@ -265,7 +265,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.7, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -276,7 +276,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.97, y: 1}
+  m_Size: {x: 0.5, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &4107507088321648112
 MonoBehaviour:
