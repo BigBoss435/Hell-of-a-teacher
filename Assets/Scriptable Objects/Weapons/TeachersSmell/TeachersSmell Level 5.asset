@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 780b134361864ae43bf48b88e6029116, type: 3}
   m_Name: TeachersSmell Level 5
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6353409420526057539, guid: ee254a8046595441d8cb2344c1d38880, type: 3}
+  prefab: {fileID: 9162240251080051876, guid: aafd43a323d7146f7b5159ebefda72d4, type: 3}
   damage: 20
   speed: 1
   cooldownDuration: 3
