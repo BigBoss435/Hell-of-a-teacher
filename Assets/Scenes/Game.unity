@@ -3286,6 +3286,10 @@ MonoBehaviour:
       enemyCount: 150
       spawnCount: 0
       enemyPrefab: {fileID: 683226769124728415, guid: af58fb98b76cf824b91cc605c0989f4f, type: 3}
+    - enemyName: Eye
+      enemyCount: 20
+      spawnCount: 0
+      enemyPrefab: {fileID: 7018869593925276186, guid: 0a26ac27d7822c24db11dad570c24efc, type: 3}
     waveQuota: 0
     spawnInterval: 0.2
     spawnCount: 0
@@ -3299,6 +3303,44 @@ MonoBehaviour:
       enemyCount: 200
       spawnCount: 0
       enemyPrefab: {fileID: 7931938655221812214, guid: bae115f257c196f4babe40a674d100a4, type: 3}
+    - enemyName: Eye
+      enemyCount: 50
+      spawnCount: 0
+      enemyPrefab: {fileID: 3369376977734049652, guid: 11b5f0746d788414baf03166fc642758, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: 6
+    enemyGroups:
+    - enemyName: Druid
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 683226769124728415, guid: af58fb98b76cf824b91cc605c0989f4f, type: 3}
+    - enemyName: Eye
+      enemyCount: 200
+      spawnCount: 0
+      enemyPrefab: {fileID: 7018869593925276186, guid: 0a26ac27d7822c24db11dad570c24efc, type: 3}
+    - enemyName: Eye
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 3369376977734049652, guid: 11b5f0746d788414baf03166fc642758, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: 7
+    enemyGroups:
+    - enemyName: Skelton
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 2073477659895451697, guid: e7d144bfa181a504cac97133d9142479, type: 3}
+    - enemyName: Skelton
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 3369376977734049652, guid: 11b5f0746d788414baf03166fc642758, type: 3}
+    - enemyName: Skelton
+      enemyCount: 100
+      spawnCount: 0
+      enemyPrefab: {fileID: 7018869593925276186, guid: 0a26ac27d7822c24db11dad570c24efc, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
@@ -11371,34 +11413,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 260774066574945359, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Constraints
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 515702580441223595, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 515702580441223595, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1381192749246481459, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Size.x
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1381192749246481459, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Size.y
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1381192749246481459, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1381192749246481459, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2250004185101586117, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -11439,46 +11453,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2755086032497884726, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.35
-      objectReference: {fileID: 0}
     - target: {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
       propertyPath: m_Name
       value: LimboTerrain
       objectReference: {fileID: 0}
-    - target: {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5832026873058754781, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: propPrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 3218640254343717812, guid: f3f221fc3ac452d4588f9c61627f47c9, type: 3}
-    - target: {fileID: 5979079304421682512, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Size.x
-      value: 14.279405
-      objectReference: {fileID: 0}
-    - target: {fileID: 5979079304421682512, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Size.y
-      value: 8.2505
-      objectReference: {fileID: 0}
-    - target: {fileID: 5979079304421682512, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5979079304421682512, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8841721551170933336, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8755566973671883092, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
-    - {fileID: 4557954977193854175, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}

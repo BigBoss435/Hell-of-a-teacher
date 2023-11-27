@@ -1364,7 +1364,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: b558e113a47b74343976cdf2176b214d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1545,7 +1545,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.009878159, y: 0.019756556}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1556,7 +1556,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 14, y: 8}
+  m_Size: {x: 14.279405, y: 8.2505}
   m_EdgeRadius: 0
 --- !u!50 &5543314496821860508
 Rigidbody2D:
@@ -1602,6 +1602,7 @@ MonoBehaviour:
   - {fileID: 5954309733303353417}
   propPrefabs:
   - {fileID: 3218640254343717812, guid: f3f221fc3ac452d4588f9c61627f47c9, type: 3}
+  - {fileID: 1949470756253610739, guid: cd53f36c56cd3c04f8e1b5d1a92e5ae3, type: 3}
 --- !u!1 &3582759708502599388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,7 +1803,7 @@ GameObject:
   - component: {fileID: 1381192749246481459}
   - component: {fileID: 515702580441223595}
   - component: {fileID: 5178762556218262122}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1856,7 +1857,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.049375534, y: -0.04043007}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1867,7 +1868,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 13.408308, y: 7.552787}
+  m_Size: {x: 13, y: 7}
   m_EdgeRadius: 0
 --- !u!50 &515702580441223595
 Rigidbody2D:
