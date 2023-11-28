@@ -8,6 +8,7 @@ public class PlayerStats : MonoBehaviour
 {
     [SerializeField]
     public CharacterScriptableObject characterData;
+    public BossDeathCheck bossDeathCheck;
     RageMeter rageMeter;
 
     //Current Stats
@@ -202,6 +203,7 @@ public class PlayerStats : MonoBehaviour
     {
         experienceCap = levelRanges[0].experienceCapIncrease;
         rageMeter = GetComponent<RageMeter>();
+        bossDeathCheck = FindObjectOfType<BossDeathCheck>();
         
         GameManager.instance.currentHealthDisplay.text = "Health: " + currentHealth;
         GameManager.instance.currentRecoveryDisplay.text = "Recovery: " + currentRecovery;
@@ -229,6 +231,11 @@ public class PlayerStats : MonoBehaviour
         else if (isInvincible)
         {
             isInvincible = false;
+        }
+
+        if (bossDeathCheck.hasBeenKilled)
+        {
+            SetResultsIfBossIsDead();
         }
         Recover();
         UpdateStatsBasedOnRage();
@@ -385,6 +392,17 @@ public class PlayerStats : MonoBehaviour
     public void Kill()
     {
         if (!GameManager.instance.isGameOver)
+        {
+            GameManager.instance.AssignLevelReachedUI(level);
+            GameManager.instance.AssignChosenWeaponsAndPassiveItemsUI(inventory.weaponUISlots, inventory.passiveItemUISlots);
+            GameManager.instance.GameOver();
+            GameManager.instance.AssignBooksCollectedUI(booksCollected);
+        }
+    }
+
+    public void SetResultsIfBossIsDead()
+    {
+        if (bossDeathCheck.hasBeenKilled)
         {
             GameManager.instance.AssignLevelReachedUI(level);
             GameManager.instance.AssignChosenWeaponsAndPassiveItemsUI(inventory.weaponUISlots, inventory.passiveItemUISlots);
