@@ -690,16 +690,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 170602608}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 30540734}
+        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
+        m_MethodName: SceneChange
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &95972361
@@ -3192,6 +3192,7 @@ RectTransform:
   - {fileID: 787887506}
   - {fileID: 1577839552}
   - {fileID: 999207096}
+  - {fileID: 1238228891}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3341,6 +3342,15 @@ MonoBehaviour:
       enemyCount: 100
       spawnCount: 0
       enemyPrefab: {fileID: 7018869593925276186, guid: 0a26ac27d7822c24db11dad570c24efc, type: 3}
+    waveQuota: 0
+    spawnInterval: 1
+    spawnCount: 0
+  - waveName: 8
+    enemyGroups:
+    - enemyName: Boss
+      enemyCount: 1
+      spawnCount: 0
+      enemyPrefab: {fileID: 8001031877088568390, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
     waveQuota: 0
     spawnInterval: 1
     spawnCount: 0
@@ -7904,6 +7914,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235670419}
   m_CullTransparentMesh: 1
+--- !u!1 &1238228890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238228891}
+  m_Layer: 5
+  m_Name: Rage Invincibilty Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1238228891
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238228890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1429552855}
+  m_Father: {fileID: 549566082}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1284529688
 GameObject:
   m_ObjectHideFlags: 0
@@ -9239,6 +9285,140 @@ RectTransform:
   m_AnchoredPosition: {x: 250, y: -40}
   m_SizeDelta: {x: 400, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1429552854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429552855}
+  - component: {fileID: 1429552857}
+  - component: {fileID: 1429552856}
+  m_Layer: 5
+  m_Name: Rage Invincibility Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1429552855
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429552854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1238228891}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 431}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1429552856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429552854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Rage filled, you are now invincible
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_sharedMaterial: {fileID: -1751746775414678666, guid: 72c099356e1f25e4a9029c2d29218e97, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1429552857
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429552854}
+  m_CullTransparentMesh: 1
 --- !u!1 &1451497555
 GameObject:
   m_ObjectHideFlags: 0
@@ -11457,6 +11637,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LimboTerrain
       objectReference: {fileID: 0}
+    - target: {fileID: 3361734003000260846, guid: 6a45be0fd58dd434aa6512eccb34ffb6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12586,7 +12770,6 @@ GameObject:
   - component: {fileID: 1302166563177131323}
   - component: {fileID: 9154414517161428826}
   - component: {fileID: 1656372408121171536}
-  - component: {fileID: 9154414517161428827}
   m_Layer: 6
   m_Name: MathTeacher
   m_TagString: Player
@@ -12611,63 +12794,6 @@ MonoBehaviour:
   lastVerticalVector: 0
   lastMovedVector: {x: 0, y: 0}
   right: 1
---- !u!1001 &5382355261408095676
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.6500103
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.65008646
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1385063937365516614, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8001031877088568390, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
-      propertyPath: m_Name
-      value: Boss_0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ba27d497b3066b041b73725c9fcbb4d3, type: 3}
 --- !u!4 &5798615132219166938
 Transform:
   m_ObjectHideFlags: 0
@@ -12963,6 +13089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 167a92c58d2afd9449e81aa978124543, type: 2}
+  bossDeathCheck: {fileID: 0}
   damageEffect: {fileID: 4101402737234861809, guid: c3d5b1b4a57394c759daed1b0cfff086, type: 3}
   experience: 0
   experienceToGive: 0
@@ -12978,6 +13105,111 @@ MonoBehaviour:
   - startLevel: 4
     endLevel: 5
     experienceCapIncrease: 200
+  - startLevel: 6
+    endLevel: 7
+    experienceCapIncrease: 250
+  - startLevel: 7
+    endLevel: 8
+    experienceCapIncrease: 300
+  - startLevel: 8
+    endLevel: 9
+    experienceCapIncrease: 350
+  - startLevel: 8
+    endLevel: 9
+    experienceCapIncrease: 400
+  - startLevel: 10
+    endLevel: 11
+    experienceCapIncrease: 450
+  - startLevel: 11
+    endLevel: 12
+    experienceCapIncrease: 500
+  - startLevel: 12
+    endLevel: 13
+    experienceCapIncrease: 550
+  - startLevel: 13
+    endLevel: 14
+    experienceCapIncrease: 600
+  - startLevel: 14
+    endLevel: 15
+    experienceCapIncrease: 650
+  - startLevel: 15
+    endLevel: 16
+    experienceCapIncrease: 700
+  - startLevel: 16
+    endLevel: 17
+    experienceCapIncrease: 750
+  - startLevel: 17
+    endLevel: 18
+    experienceCapIncrease: 800
+  - startLevel: 18
+    endLevel: 19
+    experienceCapIncrease: 850
+  - startLevel: 19
+    endLevel: 20
+    experienceCapIncrease: 900
+  - startLevel: 20
+    endLevel: 21
+    experienceCapIncrease: 950
+  - startLevel: 21
+    endLevel: 22
+    experienceCapIncrease: 1000
+  - startLevel: 22
+    endLevel: 23
+    experienceCapIncrease: 1050
+  - startLevel: 23
+    endLevel: 24
+    experienceCapIncrease: 1100
+  - startLevel: 24
+    endLevel: 25
+    experienceCapIncrease: 1150
+  - startLevel: 25
+    endLevel: 26
+    experienceCapIncrease: 1200
+  - startLevel: 26
+    endLevel: 27
+    experienceCapIncrease: 1250
+  - startLevel: 27
+    endLevel: 28
+    experienceCapIncrease: 1300
+  - startLevel: 28
+    endLevel: 29
+    experienceCapIncrease: 1350
+  - startLevel: 29
+    endLevel: 30
+    experienceCapIncrease: 1400
+  - startLevel: 30
+    endLevel: 31
+    experienceCapIncrease: 1450
+  - startLevel: 31
+    endLevel: 32
+    experienceCapIncrease: 1500
+  - startLevel: 32
+    endLevel: 33
+    experienceCapIncrease: 1550
+  - startLevel: 33
+    endLevel: 34
+    experienceCapIncrease: 1600
+  - startLevel: 34
+    endLevel: 35
+    experienceCapIncrease: 1650
+  - startLevel: 35
+    endLevel: 36
+    experienceCapIncrease: 1700
+  - startLevel: 36
+    endLevel: 37
+    experienceCapIncrease: 1750
+  - startLevel: 37
+    endLevel: 38
+    experienceCapIncrease: 1800
+  - startLevel: 38
+    endLevel: 39
+    experienceCapIncrease: 1850
+  - startLevel: 39
+    endLevel: 40
+    experienceCapIncrease: 1900
+  - startLevel: 40
+    endLevel: 41
+    experienceCapIncrease: 100000000
   weaponIndex: 0
   passiveItemIndex: 0
   healthBar: {fileID: 1964382145}
@@ -12985,6 +13217,7 @@ MonoBehaviour:
   rageBar: {fileID: 1132575758}
   levelText: {fileID: 1128509499}
   bookText: {fileID: 924742841}
+  rageInvincibilityText: {fileID: 1429552856}
   secondWeaponTest: {fileID: 0}
   firstPassiveItemTest: {fileID: 6180232632180066804, guid: 8190c458239d44031a54fa83c1bd35fb, type: 3}
   secondPassiveItemTest: {fileID: 0}
@@ -13082,18 +13315,6 @@ MonoBehaviour:
   currentRage: 0
   rageCap: 100
   oldRageCap: 100
---- !u!114 &9154414517161428827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4484793921296096268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47f8435829d094300a33904ba04355f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -13115,4 +13336,3 @@ SceneRoots:
   - {fileID: 357158111}
   - {fileID: 30540735}
   - {fileID: 1883832994}
-  - {fileID: 5382355261408095676}

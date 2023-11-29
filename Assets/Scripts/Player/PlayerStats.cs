@@ -192,6 +192,7 @@ public class PlayerStats : MonoBehaviour
     public Image rageBar;
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI bookText;
+    public TextMeshProUGUI rageInvincibilityText;
 
     public GameObject secondWeaponTest;
     public GameObject firstPassiveItemTest, secondPassiveItemTest;
@@ -345,7 +346,8 @@ public class PlayerStats : MonoBehaviour
         
         SpawnWeapon(characterData.StartingWeapon);
         SpawnPassiveItem(firstPassiveItemTest);
-        //GameManager.instance.AssignChosenCharacterUI(characterData);
+        GameManager.instance.AssignChosenCharacterUI(characterData);
+        DisableRageInvincibleText();
     }
 
     public void TakeDamage(float dmg)
@@ -358,7 +360,6 @@ public class PlayerStats : MonoBehaviour
             if (damageEffect) Instantiate(damageEffect, transform.position, Quaternion.identity);
 
             invincibilityTimer = invincibilityDuration;
-            Debug.Log("Non rage" + invincibilityTimer);
             isInvincible = true;
 
             if (CurrentHealth <= 0)
@@ -380,8 +381,26 @@ public class PlayerStats : MonoBehaviour
         {
             isInvincible = true;
             invincibilityTimer = 5f;
-            Debug.Log(invincibilityTimer);
+            EnableRageInvincibleText(); 
+            
+            StartCoroutine(DisableRageInvincibleTextAfterDelay(5.0f));
         }
+    }
+    
+    IEnumerator DisableRageInvincibleTextAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        DisableRageInvincibleText();
+    }
+    
+    void EnableRageInvincibleText()
+    {
+        rageInvincibilityText.gameObject.SetActive(true);
+    }
+    
+    void DisableRageInvincibleText()
+    {
+        rageInvincibilityText.gameObject.SetActive(false);
     }
 
     void UpdateHealthBar()
@@ -395,9 +414,19 @@ public class PlayerStats : MonoBehaviour
         {
             GameManager.instance.AssignLevelReachedUI(level);
             GameManager.instance.AssignChosenWeaponsAndPassiveItemsUI(inventory.weaponUISlots, inventory.passiveItemUISlots);
+            StartCoroutine(DelayedGameOver());
             GameManager.instance.GameOver();
             GameManager.instance.AssignBooksCollectedUI(booksCollected);
         }
+    }
+    
+    IEnumerator DelayedGameOver()
+    {
+        // Wait for 2 seconds (you can adjust the time as needed)
+        yield return new WaitForSeconds(2.0f);
+
+        // Call GameOver after the delay
+        GameManager.instance.GameOver();
     }
 
     public void SetResultsIfBossIsDead()

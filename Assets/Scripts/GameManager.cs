@@ -267,10 +267,10 @@ public class GameManager : MonoBehaviour
         
         for (int i = 0; i < chosenPassiveItemsUI.Count; i++)
         {
-            if (chosenWeaponsData[i].sprite)
+            if (chosenPassiveItemsData[i].sprite)
             {
                 chosenPassiveItemsUI[i].enabled = true;
-                chosenPassiveItemsUI[i].sprite = chosenPassiveItemsUI[i].sprite;
+                chosenPassiveItemsUI[i].sprite = chosenPassiveItemsData[i].sprite;
             }
             else
             {
