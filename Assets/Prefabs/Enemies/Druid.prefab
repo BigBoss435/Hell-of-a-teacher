@@ -193,6 +193,7 @@ MonoBehaviour:
   currentHealth: 0
   currentDamage: 0
   damageClip: {fileID: 8300000, guid: 79f4464e95a5270449b49109b29490e2, type: 3}
+  enemyDamageSound: {fileID: 7743567909163813797, guid: b2f328d954243418d8fdac3d6bb5653d, type: 3}
   despawnDistance: 20
   damageColor: {r: 1, g: 0, b: 0, a: 1}
   damageFlashDuration: 0.2

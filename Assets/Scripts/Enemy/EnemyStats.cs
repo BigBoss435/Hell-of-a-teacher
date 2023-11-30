@@ -19,6 +19,8 @@ public class EnemyStats : MonoBehaviour
     public float currentDamage;
     public AudioClip damageClip;
     private AudioSource damageSound;
+    public GameObject enemyDamageSound;
+    AudioSource audioSource;
 
     public float despawnDistance = 20f;
     Transform player;
@@ -45,6 +47,7 @@ public class EnemyStats : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
 
+        audioSource = enemyDamageSound.GetComponent<AudioSource>();
         movement = GetComponent<EnemyMovement>();
         damageSound = GetComponent<AudioSource>();
         damageSound.clip = damageClip;
@@ -61,6 +64,11 @@ public class EnemyStats : MonoBehaviour
     public void TakeDamage(float dmg, Vector2 sourcePosition, float knockbackForce = 3f, float knockbackDuration = 0.2f)
     {
         currentHealth -= dmg;
+        if (!audioSource.isPlaying)
+        {
+            Instantiate(enemyDamageSound, transform.position, UnityEngine.Quaternion.identity);
+            Debug.Log("playing sounds");
+        }
         StartCoroutine(DamageFlash());
 
         if (dmg > 0)
