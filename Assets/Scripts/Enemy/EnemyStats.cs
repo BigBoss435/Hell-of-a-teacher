@@ -66,8 +66,8 @@ public class EnemyStats : MonoBehaviour
         currentHealth -= dmg;
         if (!audioSource.isPlaying)
         {
-            Instantiate(enemyDamageSound, transform.position, UnityEngine.Quaternion.identity);
-            Debug.Log("playing sounds");
+            GameObject sound = Instantiate(enemyDamageSound, transform.position, UnityEngine.Quaternion.identity);
+            Destroy(sound, 2f);
         }
         StartCoroutine(DamageFlash());
 
