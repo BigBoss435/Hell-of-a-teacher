@@ -345,7 +345,6 @@ public class PlayerStats : MonoBehaviour
         currentBooksRatio = characterData.BooksGrantedRatio;
         
         SpawnWeapon(characterData.StartingWeapon);
-        SpawnPassiveItem(firstPassiveItemTest);
         GameManager.instance.AssignChosenCharacterUI(characterData);
         DisableRageInvincibleText();
     }

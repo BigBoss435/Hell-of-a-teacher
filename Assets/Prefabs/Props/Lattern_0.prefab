@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 725424973184996400}
   - component: {fileID: 729305016410428848}
   - component: {fileID: -1238619960769490547}
-  - component: {fileID: -7414239744887209464}
   - component: {fileID: 2847228484146616904}
   - component: {fileID: 9107470060118341113}
   m_Layer: 9
@@ -124,22 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
---- !u!114 &-7414239744887209464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949470756253610739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 074694df408dc7c4f88db38f11992e03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drops:
-  - name: 
-    itemPrefab: {fileID: 6214582256130948289, guid: 52e13dfefbf4645789f632dbc72ca2e6, type: 3}
-    dropRate: 25
 --- !u!61 &2847228484146616904
 BoxCollider2D:
   m_ObjectHideFlags: 0
