@@ -17,4 +17,4 @@ MonoBehaviour:
   nextLevelPrefab: {fileID: 0}
   name: 'Teacher of the month '
   description: Increases books gained by 2 times
-  icon: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  icon: {fileID: 21300000, guid: 519a35d2addf2ad49bffe5994060dd9c, type: 3}
